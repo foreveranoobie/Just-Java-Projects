@@ -1,0 +1,95 @@
+package ua.nure.storozhuk.practice3;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.HashSet;
+import java.util.Random;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Part1 {
+	private static final String ENCODING = "Cp1251";
+
+	public static String convert1(String input) {
+		input = input.substring(input.indexOf(System.lineSeparator()) + 1, input.length());
+		input = input.replaceAll(";[A-Za-zР-пр-џ]* [A-Za-zР-пр-џ]*;", ": ");
+		return input;
+	}
+
+	public static String convert2(String input) {
+		Pattern surname = Pattern.compile("[A-Za-zР-пр-џ]* [A-Za-zР-пр-џ]*", Pattern.MULTILINE);
+		Matcher surMatch = surname.matcher(input);
+		Pattern mail = Pattern.compile("[\\w]*@[A-Za-z]*.[A-Za-z]*", Pattern.MULTILINE);
+		Matcher mailMatch = mail.matcher(input);
+		StringBuilder res = new StringBuilder();
+		String[] nameInv;
+		while (surMatch.find()) {
+			mailMatch.find();
+			nameInv = surMatch.group().split(" ");
+			res.append(nameInv[1]+" "+ nameInv[0] + " (email: " + mailMatch.group() + ")" + System.lineSeparator());
+		}
+		res.delete(res.length() - 2, res.length());
+		return res.toString();
+	}
+
+	public static String convert3(String input) {
+		HashSet<String> mails = new HashSet<String>();
+		String[] lines = input.split(System.lineSeparator());
+		Pattern mail = Pattern.compile("[\\w]*@[A-Za-z]*.[A-Za-z]*", Pattern.MULTILINE);
+		Matcher mailMatch = mail.matcher(input);
+		while (mailMatch.find()) {
+			mails.add(mailMatch.group().replaceAll("[\\w]*@", ""));
+		}
+		StringBuilder res = new StringBuilder();
+		for (String str : mails) {
+			res.append(str + " ==> ");
+			for (int m = 0; m < lines.length; m++) {
+				if (lines[m].contains(str)) {
+					res.append(lines[m].replaceAll(";[A-Za-zР-пр-џ]* [A-Za-zР-пр-џ]*;[\\w]*@[A-Za-z]*.[A-Za-z]*", "")
+							+ ", ");
+				}
+			}
+			res.delete(res.length() - 2, res.length());
+			res.append(System.lineSeparator());
+		}
+		res.delete(res.length() - 2, res.length());
+		return res.toString();
+	}
+
+	public static String convert4(String input) {
+		Random rand = new Random();
+		String[] lines = input.split(System.lineSeparator());
+		StringBuilder result = new StringBuilder();
+		lines[0] += ";Password";
+		result.append(lines[0] + System.lineSeparator());
+		for (int i = 1; i < lines.length; i++) {
+			lines[i] += ";" + (rand.nextInt(9000) + 1000);
+			result.append(lines[i] + System.lineSeparator());
+		}
+		result.deleteCharAt(result.length() - 1);
+		return result.toString();
+	}
+
+	public static void main(String... strings) {
+		String input = readFile("part1.txt");
+		System.out.println(convert1(input));
+		System.out.println("~~~~~~~~~~~~");
+		System.out.println(convert2(input));
+		System.out.println("~~~~~~~~~~~~");
+		System.out.println(convert3(input));
+		System.out.println("~~~~~~~~~~~~");
+		System.out.print(convert4(input));
+	}
+
+	public static String readFile(String path) {
+		String res = null;
+		try {
+			byte[] bytes = Files.readAllBytes(Paths.get(path));
+			res = new String(bytes, ENCODING);
+		} catch (IOException ex) {
+			ex.printStackTrace();
+		}
+		return res;
+	}
+}

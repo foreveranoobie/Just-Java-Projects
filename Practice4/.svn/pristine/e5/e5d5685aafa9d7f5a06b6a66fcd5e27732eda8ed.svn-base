@@ -1,0 +1,62 @@
+package ua.nure.storozhuk.practice4;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.Iterator;
+
+class Sentencer implements Iterable<String> {
+	String[] sentences;
+	int size;
+
+	public Sentencer(String[] strs) {
+		sentences = strs;
+		size = strs.length;
+	}
+
+	class SentIter implements Iterator<String> {
+		int cur;
+
+		@Override
+		public boolean hasNext() {
+			return cur < size;
+		}
+
+		@Override
+		public String next() {
+			return sentences[cur++];
+		}
+
+	}
+
+	@Override
+	public Iterator<String> iterator() {
+		// TODO Auto-generated method stub
+		return new SentIter();
+	}
+}
+
+public class Part4 {
+	private static final String ENCODING = "Cp1251";
+
+	public static void main(String[] args) {
+		String input = readFile("part4.txt");
+		String[] sentences = input.split("\\s*[?.!]\\s*");
+		Sentencer stnc = new Sentencer(sentences);
+		for (String str : stnc) {
+			System.out.println(str);
+		}
+	}
+
+	public static String readFile(String path) {
+		String res = null;
+		try {
+			byte[] bytes = Files.readAllBytes(Paths.get(path));
+			res = new String(bytes, ENCODING);
+		} catch (IOException ex) {
+			ex.printStackTrace();
+		}
+		return res;
+	}
+
+}

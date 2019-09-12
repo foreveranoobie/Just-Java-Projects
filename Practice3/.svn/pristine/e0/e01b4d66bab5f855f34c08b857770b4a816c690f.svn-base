@@ -1,0 +1,43 @@
+package ua.nure.storozhuk.practice3;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Part3 {
+	private static final String ENCODING = "Cp1251";
+
+	public static String convert(String input) {
+		Pattern p = Pattern.compile("\\b[A-Za-zÀ-ß¨à-ÿ¸]{3,}\\b", Pattern.MULTILINE | Pattern.UNICODE_CHARACTER_CLASS);
+		Matcher m = p.matcher(input);
+		while (m.find()) {
+			if ((97 <= m.group().codePointAt(0) && m.group().codePointAt(0) <= 122)
+					|| (1072 <= m.group().codePointAt(0) && m.group().codePointAt(0) <= 1103)) {
+				input = input.replace(m.group(),
+						m.group().replaceFirst("[a-zà-ÿ]", m.group().substring(0, 1).toUpperCase()));
+			} else {
+				input = input.replace(m.group(),
+						m.group().replaceFirst("[A-ZÀ-ß]", m.group().substring(0, 1).toLowerCase()));
+			}
+		}
+		return input;
+	}
+
+	public static void main(String[] args) {
+		String input = readFile("part3.txt");
+		System.out.print(convert(input));
+	}
+
+	public static String readFile(String path) {
+		String res = null;
+		try {
+			byte[] bytes = Files.readAllBytes(Paths.get(path));
+			res = new String(bytes, ENCODING);
+		} catch (IOException ex) {
+			ex.printStackTrace();
+		}
+		return res;
+	}
+}
