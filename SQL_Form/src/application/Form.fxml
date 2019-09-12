@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Button fx:id="updT" layoutX="171.0" layoutY="25.0" mnemonicParsing="false" onAction="#updateTab" text="Update" />
+      <Button fx:id="delBut" layoutX="100.0" layoutY="25.0" mnemonicParsing="false" onAction="#deleteEl" text="Delete" />
+      <Button fx:id="addN" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" onAction="#AddProd" text="Add New" />
+      <TableView fx:id="shop" layoutX="56.0" layoutY="100.0" prefHeight="200.0" prefWidth="489.0">
+        <columns>
+          <TableColumn fx:id="ID_part" prefWidth="75.0" text="ID_part" />
+          <TableColumn fx:id="type" onEditCommit="#editType" prefWidth="75.0" text="type" />
+            <TableColumn fx:id="vendor" onEditCommit="#editVendor" prefWidth="115.0" text="vendor" />
+            <TableColumn fx:id="price" onEditCommit="#editPrice" prefWidth="115.0" text="price" />
+            <TableColumn fx:id="exist" onEditCommit="#editExist" prefWidth="115.0" text="existance" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

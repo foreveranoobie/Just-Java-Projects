@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="310.0" prefWidth="297.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <TextField fx:id="typeRow" layoutX="80.0" layoutY="112.0" promptText="type" text="type" />
+      <TextField fx:id="codeRow" layoutX="80.0" layoutY="161.0" promptText="vendor_code_sh" text="vendor_code_sh" />
+      <TextField fx:id="priceRow" layoutX="80.0" layoutY="212.0" promptText="price" text="price" />
+      <TextField fx:id="existRow" layoutX="80.0" layoutY="259.0" promptText="exist" text="exist" />
+      <Button fx:id="addNbut" layoutX="80.0" layoutY="57.0" mnemonicParsing="false" onAction="#addNel" text="Add" />
+   </children>
+</AnchorPane>
