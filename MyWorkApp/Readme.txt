@@ -1,0 +1,1 @@
+Just JavaFX GUI and nothing else

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchPane" prefHeight="549.0" prefWidth="502.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <AnchorPane fx:id="anchP1" layoutX="502.0" layoutY="1.0" prefHeight="549.0" prefWidth="200.0">
+         <children>
+            <TextFlow fx:id="memTxt" prefHeight="549.0" prefWidth="200.0" />
+         </children>
+      </AnchorPane>
+      <TextFlow fx:id="TextChat" layoutX="42.0" layoutY="1.0" prefHeight="549.0" prefWidth="459.0" />
+      <TextField fx:id="textEnt" layoutX="47.0" layoutY="508.0" prefHeight="25.0" prefWidth="450.0" />
+      <ImageView fx:id="img1" fitHeight="41.0" fitWidth="20.0" layoutX="12.0" layoutY="500.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../microfono-microphone-icon-coloring-book-colouring-xanthochroi---2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img2" fitHeight="25.0" fitWidth="31.0" layoutX="10.0" layoutY="469.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../smiley-vector.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img3" fitHeight="31.0" fitWidth="32.0" layoutX="7.0" layoutY="438.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../folder-image-icon-10.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img4" fitHeight="31.0" fitWidth="32.0" layoutX="7.0" layoutY="14.0" onMouseClicked="#memList" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../62650.png" />
+         </image>
+      </ImageView>
+      <Line fx:id="line" endX="31.0" layoutX="10.0" layoutY="436.0" startX="-10.0" />
+      <ImageView fx:id="img5" fitHeight="31.0" fitWidth="31.0" layoutX="7.0" layoutY="61.0" onMouseClicked="#newsR" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../0869c4066bc3ab02989e254304153611-paper-sheet-doodle-icon-by-vexels.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

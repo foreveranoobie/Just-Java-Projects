@@ -1,0 +1,1 @@
+public interface Factories<T> { T create(); }
