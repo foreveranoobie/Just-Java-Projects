@@ -1,0 +1,19 @@
+package ua.nure.storozhuk.practice6;
+
+public class Part5 {
+
+	public static void main(String[] args) {
+		Tree<Integer> tree = new Tree<Integer>();
+		int num = 0;
+		for (int m = 0; m < 30; m++) {
+			num = (int) ((Math.random() * 20) + 1);
+			tree.add(num);
+		}
+		tree.print();
+		System.out.println("~~~~~~~~~~~~~");
+		tree.remove(14);
+		tree.print();
+		System.out.println("~~~~~~~~~~~~~");
+	}
+
+}

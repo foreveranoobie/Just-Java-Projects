@@ -1,0 +1,22 @@
+package ua.nure.storozhuk.practice6;
+
+import java.util.Scanner;
+
+public class Part1 {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		StringBuilder input = new StringBuilder();
+		while (scan.hasNextLine()) {
+			input.append(scan.nextLine());
+			input.append("\n");
+			if (input.toString().contains("stop")) {
+				input.delete(input.indexOf("stop"), input.length());
+				break;
+			}
+		}
+		WordContainer.main(input.toString().split("[^\\w]+"));
+		scan.close();
+	}
+
+}

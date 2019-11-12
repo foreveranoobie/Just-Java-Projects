@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="calc" method="GET">
+		<table>
+			<tr>
+				<td>First num :</td>
+				<td><input type="text" name="first" /></td>
+			</tr>
+			<tr>
+				<td>Second num :</td>
+				<td><input type="text" name="second" /></td>
+			</tr>
+			<tr>
+				<td>Operation :</td>
+				<td><select name="operand">
+						<option disabled>Choose operand</option>
+						<option value="+">+</option>
+						<option value="-">-</option>
+				</select></td>
+			</tr>
+			<th>
+			<input type="submit" value="Submit" name="find" />
+			</th>
+			<th>
+			<input type="reset" value="Reset" name="reset" />
+			</th>
+		</table>
+	</form>
+</body>
+</html>

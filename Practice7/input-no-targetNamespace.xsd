@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  XML schema WO target namespace -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns="https://www.w3schools.com">
+<xsd:element name = "OldCards">
+	        <xsd:complexType>
+				<xsd:sequence>
+					<xsd:element name="OldCard"
+					           type="oldcard"
+							   maxOccurs ="unbounded"/>
+				</xsd:sequence>
+			</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="oldcard">
+	  <xsd:sequence>
+	    <xsd:element name = "Thema">
+		    <xsd:simpleType>
+		       <xsd:restriction base="xsd:string">
+			      <xsd:pattern value="([a-zA-Z])+"/>
+			   </xsd:restriction>
+			</xsd:simpleType>
+		</xsd:element>
+		<xsd:element name = "Type">
+		  <xsd:simpleType>
+		     <xsd:restriction base="xsd:string">
+			   <xsd:enumeration value="Advertisement"/>
+			   <xsd:enumeration value="Greeting"/>
+			   <xsd:enumeration value="Default"/>
+			 </xsd:restriction>
+		  </xsd:simpleType>
+		</xsd:element>
+		<xsd:element name = "Country" type = "xsd:string"/>
+		<xsd:element name = "Year" type = "xsd:positiveInteger"/>
+		<xsd:element name = "Author" minOccurs = "0">
+		    <xsd:simpleType>
+		       <xsd:restriction base="xsd:string">
+			      <xsd:pattern value="[A-Z][a-z]+[ ][A-Z][a-z]+"/>
+			   </xsd:restriction>
+			</xsd:simpleType>
+		</xsd:element>
+		<xsd:element name = "Valuable">
+		    <xsd:simpleType>
+		       <xsd:restriction base="xsd:string">
+			       <xsd:enumeration value="Historical"/>
+			       <xsd:enumeration value="Thematical"/>
+			       <xsd:enumeration value="Collectional"/>
+			   </xsd:restriction>
+			</xsd:simpleType>
+		</xsd:element>
+	  </xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

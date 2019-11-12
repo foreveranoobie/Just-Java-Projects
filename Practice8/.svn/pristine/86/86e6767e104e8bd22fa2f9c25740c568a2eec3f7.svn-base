@@ -1,0 +1,48 @@
+package ua.nure.storozhuk.practice8.db.entity;
+
+public class User implements Comparable{
+	private String login;
+	private int id;
+
+	public User(int id, String name) {
+		this.id = id;
+		this.login = name;
+	}
+
+	public User(String login) {
+		this.login = login;
+	}
+
+	public User() {
+	}
+	
+	public boolean equals(Object obj) {
+		return this.login.equals(((User) obj).getLogin());
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getLogin() {
+		return login;
+	}
+
+	public static User createUser(String login) {
+		return new User(login);
+	}
+
+	public String toString() {
+		return login;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	@Override
+	public int compareTo(Object o) {
+		int comp = ((User) o).getId();
+		return this.getId() - comp;
+	}
+}

@@ -1,0 +1,48 @@
+package ua.nure.storozhuk.practice6.part3;
+
+public class Parking {
+	int[] park;
+
+	public Parking(int size) {
+		park = new int[size];
+	}
+
+	public boolean arrive(int k) {
+		if (k < 0 || k > park.length - 1) {
+			throw new IllegalArgumentException();
+		} else {
+			for (int l = k; l < park.length; l++) {
+				if (park[l] != 1) {
+					park[l] = 1;
+					return true;
+				}
+			}
+			for (int l = 0; l < k; l++) {
+				if (park[l] != 1) {
+					park[l] = 1;
+					return true;
+				}
+			}
+			return false;
+		}
+	}
+
+	public boolean depart(int k) {
+		if (k < 0 || k > park.length - 1) {
+			throw new IllegalArgumentException();
+		} else {
+			if (park[k] == 0) {
+				return false;
+			}
+			park[k] = 0;
+			return true;
+		}
+	}
+	
+	public void print() {
+		for(int num : park) {
+			System.out.print(num);
+		}
+		System.out.println();
+	}
+}

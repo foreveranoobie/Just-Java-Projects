@@ -1,0 +1,1 @@
+connection.url = jdbc:mysql://localhost:3306/P8DB?user=root&password=67245

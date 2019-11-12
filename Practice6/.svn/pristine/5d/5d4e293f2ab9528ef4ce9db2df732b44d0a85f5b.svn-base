@@ -1,0 +1,13 @@
+package ua.nure.storozhuk.practice6;
+
+public class Part1 {
+
+	public static void main(String[] args) {
+		try {
+			Class clas = Class.forName("WordContainer");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

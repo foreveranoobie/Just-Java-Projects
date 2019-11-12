@@ -1,0 +1,51 @@
+package ua.nure.storozhuk.practice6.part4;
+
+import java.util.Iterator;
+
+public class Range implements Iterable<Integer> {
+	int[] array;
+
+	public Range(int low, int max) {
+		int size = max - low + 1;
+		array = new int[size];
+		for (int m = 0; m < size; m++) {
+			array[m] = m + low;
+		}
+	}
+
+	public Range(int low, int max, boolean reverse) {
+		if (reverse == false) {
+			int size = max - low + 1;
+			array = new int[size];
+			for (int m = 0; m < size; m++) {
+				array[m] = low++;
+			}
+		} else {
+			int size = max - low + 1;
+			array = new int[size];
+			for (int m = 0; m < size; m++) {
+				array[m] = max--;
+			}
+		}
+	}
+
+	@Override
+	public Iterator<Integer> iterator() {
+		return new Iterator<Integer>() {
+			int curIndex;
+
+			@Override
+			public boolean hasNext() {
+				return curIndex < array.length;
+			}
+
+			@Override
+			public Integer next() {
+				if (this.hasNext()) {
+					return array[curIndex++];
+				}
+				return null;
+			}
+		};
+	}
+}

@@ -1,0 +1,52 @@
+package ua.nure.storozhuk.practice8.db.entity;
+
+public class Team implements Comparable{
+	private String name;
+	private int id;
+
+	public Team(String name) {
+		this.name = name;
+	}
+
+	public Team(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+	
+	public boolean equals(Object obj) {
+		return this.name.equals(((Team) obj).getName());
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Team() {
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public static Team createTeam(String name) {
+		return new Team(name);
+	}
+
+	public String toString() {
+		return name;
+	}
+
+	@Override
+	public int compareTo(Object o) {
+		int comp = ((Team) o).getId();
+		return this.getId() - comp;
+	}
+}

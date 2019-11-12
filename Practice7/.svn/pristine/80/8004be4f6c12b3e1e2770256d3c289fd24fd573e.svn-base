@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="https://www.w3schools.com"
+xmlns:tn="https://www.w3schools.com"
+elementFormDefault="qualified">	
+<xs:element name = "OldCards">
+	        <xs:complexType>
+				<xs:sequence>
+					<xs:element name="OldCard"
+					           type="tn:oldcard"
+							   maxOccurs ="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+	</xs:element>
+	<xs:complexType name="oldcard">
+	  <xs:sequence>
+	    <xs:element name = "Thema">
+		    <xs:simpleType>
+		       <xs:restriction base="xs:string">
+			      <xs:pattern value="([a-zA-Z])+"/>
+			   </xs:restriction>
+			</xs:simpleType>
+		</xs:element>
+		<xs:element name = "Type">
+		  <xs:simpleType>
+		     <xs:restriction base="xs:string">
+			   <xs:enumeration value="Advertisement"/>
+			   <xs:enumeration value="Greeting"/>
+			   <xs:enumeration value="Default"/>
+			 </xs:restriction>
+		  </xs:simpleType>
+		</xs:element>
+		<xs:element name = "Country" type = "xs:string"/>
+		<xs:element name = "Year" type = "xs:positiveInteger"/>
+		<xs:element name = "Author" minOccurs = "0">
+		    <xs:simpleType>
+		       <xs:restriction base="xs:string">
+			      <xs:pattern value="[A-Z][a-z]+[ ][A-Z][a-z]+"/>
+			   </xs:restriction>
+			</xs:simpleType>
+		</xs:element>
+		<xs:element name = "Valuable">
+		    <xs:simpleType>
+		       <xs:restriction base="xs:string">
+			       <xs:enumeration value="Historical"/>
+			       <xs:enumeration value="Thematical"/>
+			       <xs:enumeration value="Collectional"/>
+			   </xs:restriction>
+			</xs:simpleType>
+		</xs:element>
+	  </xs:sequence>
+	</xs:complexType>
+</xs:schema>

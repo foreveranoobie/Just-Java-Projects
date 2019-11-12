@@ -1,0 +1,19 @@
+package ua.nure.storozhuk.practice6.part5;
+
+public class Part5 {
+
+	public static void main(String[] args) {
+		Tree<Integer> tree = new Tree<>();
+		tree.add(new Integer[]{3,1,5,2,0,4});
+		System.out.println(tree.add(6));
+		System.out.println(tree.add(1));
+		System.out.print("~~~~~~~\n");
+		tree.print();
+		System.out.print("~~~~~~~\n");
+		System.out.println(tree.remove(5));
+		System.out.println(tree.remove(5));
+		System.out.print("~~~~~~~\n");
+		tree.print();
+	}
+
+}

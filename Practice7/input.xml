@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OldCards xmlns="https://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="https://www.w3schools.com input.xsd">
+	<OldCard>
+	  <Thema>Nature</Thema>
+	  <Type>Advertisement</Type>
+      <Country>Great Britain</Country>	
+	  <Year>1995</Year>
+	  <Valuable>Historical</Valuable>
+	</OldCard>
+	<OldCard>
+	  <Thema>CitySightseeing</Thema>
+	  <Type>Greeting</Type>
+      <Country>France</Country>	
+	  <Year>1970</Year>
+	  <Author>James Been</Author>
+	  <Valuable>Thematical</Valuable>
+	</OldCard>
+</OldCards>
+
+
