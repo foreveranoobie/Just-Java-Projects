@@ -1,0 +1,87 @@
+package ua.nure.storozhuk.practice5;
+
+public class Part3 {
+	private static Part3 M;
+	private int counter;
+	private int counter2;
+	private Thread[] threads;
+	private int k;
+	private int t;
+
+	public Part3(int n, int k, int t) {
+		threads = new Thread[n];
+		this.k = k;
+		for (int count = 0; count < n; count++) {
+			threads[count] = new Thread() {
+				public void run() {
+					for (int m = 0; m < k; m++) {
+						System.out.printf(Thread.currentThread().getName() + ": %d %d%n", counter, counter2);
+						counter++;
+						try {
+							Thread.sleep(t);
+							counter2++;
+						} catch (InterruptedException e) {
+							e.printStackTrace();
+						}
+					}
+				}
+			};
+		}
+	}
+
+	public Part3() {
+	}
+
+	public void test() {
+		for (int m = 0; m < threads.length; m++) {
+			threads[m].start();
+		}
+	}
+
+	public void reset() throws InterruptedException {
+		for (int m = 0; m < threads.length; m++) {
+			while (!threads[m].getState().toString().equals("TERMINATED")) {
+			}
+		}
+		counter = 0;
+		counter2 = 0;
+		threads = new Thread[threads.length];
+		M = this;
+		for (int count = 0; count < threads.length; count++) {
+			threads[count] = new Thread() {
+				public void run() {
+					for (int m = 0; m < k; m++) {
+						synchronized (M) {
+							System.out.printf(Thread.currentThread().getName() + ": %d %d%n", M.counter, M.counter2);
+							M.counter++;
+							try {
+								Thread.sleep(t);
+							} catch (InterruptedException e) {
+								e.printStackTrace();
+							}
+							M.counter2++;
+						}
+					}
+				};
+			};
+		}
+	}
+
+	public void testSync() throws InterruptedException {
+		for (int m = 0; m < threads.length; m++) {
+			threads[m].start();
+		}
+		for (int m = 0; m < threads.length; m++) {
+			threads[m].join();
+		}
+	}
+
+	public static void main(String[] args) throws InterruptedException {
+		Part3 p = new Part3(3, 5, 100);
+		p.test();
+		p.reset();
+		System.out.println("~~~~~~~~~~~");
+		p.testSync();
+	}
+
+}
