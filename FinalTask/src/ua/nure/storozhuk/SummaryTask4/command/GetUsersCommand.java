@@ -5,19 +5,28 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.List;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import org.apache.log4j.Logger;
 
 import ua.nure.storozhuk.SummaryTask4.sql.DBManager;
 import ua.nure.storozhuk.SummaryTask4.sql.entity.User;
 
+/**
+ * Admin receives the information about users
+ *
+ */
 public class GetUsersCommand extends Command {
+	private static final long serialVersionUID = 1L;
+	private static final Logger LOG = Logger.getLogger(GetUsersCommand.class);
 
 	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("GetUsersCommand started");
 		if (request.getParameter("incommand") == null) {
 			String forward = getUsers(request, response);
+			LOG.debug("incommand == null. Finished");
 			return forward;
 		} else {
 			String forward = "";
@@ -25,14 +34,23 @@ public class GetUsersCommand extends Command {
 				Method method = this.getClass().getDeclaredMethod(request.getParameter("incommand"),
 						HttpServletRequest.class, HttpServletResponse.class);
 				forward = (String) method.invoke(this, request, response);
-			} catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException | NoSuchMethodException | SecurityException e) {
+			} catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException
+					| NoSuchMethodException | SecurityException e) {
 				e.printStackTrace();
 			}
+			LOG.debug("GetUsersCommand finished");
 			return forward;
 		}
 	}
-	
+
+	/**
+	 * Approves the teacher's registration
+	 * 
+	 * @param request
+	 * @param response
+	 */
 	protected String approve(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
 		String forward = "";
 		try {
 			DBManager dbm = new DBManager();
@@ -43,10 +61,12 @@ public class GetUsersCommand extends Command {
 		} catch (ClassNotFoundException | IOException e) {
 			e.printStackTrace();
 		}
+		LOG.debug("finished");
 		return forward;
 	}
 
 	protected String unblockStudent(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
 		String forward = "";
 		try {
 			DBManager dbm = new DBManager();
@@ -59,10 +79,12 @@ public class GetUsersCommand extends Command {
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
+		LOG.debug("finished");
 		return forward;
 	}
 
 	protected String blockStudent(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
 		String forward = "";
 		try {
 			DBManager dbm = new DBManager();
@@ -75,10 +97,12 @@ public class GetUsersCommand extends Command {
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
+		LOG.debug("finished");
 		return forward;
 	}
 
 	public String getUsers(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
 		String forward = "";
 		try {
 			DBManager dbm = new DBManager();
@@ -88,11 +112,10 @@ public class GetUsersCommand extends Command {
 			request.getSession().setAttribute("requestsList", registers);
 			dbm.closeCon();
 			forward = "\\WEB-INF\\jsp\\admin\\usersList.jsp";
-			// request.getRequestDispatcher("\\WEB-INF\\jsp\\admin\\usersList.jsp").forward(request,
-			// response);
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
+		LOG.debug("finished");
 		return forward;
 	}
 }

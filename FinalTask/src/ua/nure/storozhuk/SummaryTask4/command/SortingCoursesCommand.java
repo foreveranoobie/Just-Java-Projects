@@ -11,21 +11,27 @@ import java.util.Set;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.log4j.Logger;
+
 import ua.nure.storozhuk.SummaryTask4.sql.DBManager;
 import ua.nure.storozhuk.SummaryTask4.sql.SortedBase;
 import ua.nure.storozhuk.SummaryTask4.sql.entity.Course;
 import ua.nure.storozhuk.SummaryTask4.sql.entity.Journal;
 import ua.nure.storozhuk.SummaryTask4.sql.entity.User;
 
+/**
+ * Command object for sorting lists of courses
+ *
+ */
 public class SortingCoursesCommand extends Command {
-
+	private static final Logger LOG = Logger.getLogger(SortingCoursesCommand.class);
 	private static final long serialVersionUID = 1L;
 
 	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
 		String forward = "";
 		if (request.getParameter("incommand") == null) {
-			// forward = getCourses(request, response);
 		} else {
 			try {
 				Method method = this.getClass().getDeclaredMethod(request.getParameter("incommand"),
@@ -35,12 +41,21 @@ public class SortingCoursesCommand extends Command {
 					| NoSuchMethodException | SecurityException e) {
 				e.printStackTrace();
 			}
+			LOG.debug("finished");
 			return forward;
 		}
+		LOG.debug("finished");
 		return forward;
 	}
 
+	/**
+	 * Alphabetical subjects sorting
+	 * 
+	 * @param request
+	 * @param response
+	 */
 	public String sortStudentCourses(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
 		String forward = "";
 		List<Course> list = (List<Course>) request.getAttribute("list");
 		if (request.getParameter("order") == null || request.getParameter("order").isEmpty()) {
@@ -51,10 +66,19 @@ public class SortingCoursesCommand extends Command {
 			request.removeAttribute("order");
 		}
 		request.setAttribute("list", list);
+		LOG.debug("finished");
 		return forward;
 	}
 
+	/**
+	 * Getting the list of courses ordered by count of applied students for this
+	 * course
+	 * 
+	 * @param request
+	 * @param response
+	 */
 	public String sortPopularCourses(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
 		String forward = "";
 		List<Course> list = (List<Course>) request.getSession().getAttribute("courses");
 		String distCourses = request.getParameter("distCourses");
@@ -82,10 +106,19 @@ public class SortingCoursesCommand extends Command {
 		request.setAttribute("distCourse", distCourse);
 		request.setAttribute("list", list);
 		forward = "WEB-INF\\jsp\\student\\preparingCourses.jsp";
+		LOG.debug("finished");
 		return forward;
 	}
 
+	/**
+	 * Sorting courses by the longest term of studying
+	 * 
+	 * @param request
+	 * @param response
+	 * @return
+	 */
 	public String sortCoursesLong(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
 		String forward = "";
 		List<Course> list = (List<Course>) request.getSession().getAttribute("courses");
 		String distCourses = request.getParameter("distCourses");
@@ -107,10 +140,18 @@ public class SortingCoursesCommand extends Command {
 		request.setAttribute("list", list);
 		request.setAttribute("distCourse", distCourse);
 		forward = "WEB-INF\\jsp\\student\\preparingCourses.jsp";
+		LOG.debug("finished");
 		return forward;
 	}
 
+	/**
+	 * Getting the subjects leading by the certain choosen teacher
+	 * 
+	 * @param request
+	 * @param response
+	 */
 	public String getTeacherSubject(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
 		String forward = "";
 		List<Course> list = new LinkedList<Course>();
 		if (request.getParameter("teacherNum").equals("All")) {
@@ -123,33 +164,20 @@ public class SortingCoursesCommand extends Command {
 			}
 		}
 		request.setAttribute("list", list);
+		LOG.debug("finished");
 		return forward;
 	}
 
-	public String sortStudentTeachers(HttpServletRequest request, HttpServletResponse response) {
-		String forward = "";
-		User user = (User) request.getAttribute("user");
-		int teacherId = Integer.valueOf(request.getParameter("teacherID"));
-		DBManager dbm;
-		try {
-			dbm = new DBManager();
-			List<Course> list = dbm.getProcessingCourses(user.getId());
-			List<Course> result = new LinkedList<Course>();
-			for (Course course : list) {
-				if (course.getTeacherId() == teacherId) {
-					result.add(course);
-				}
-			}
-			dbm.closeCon();
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		}
-		return forward;
-	}
-
-//Need refactoring	
+	/**
+	 * Getting the list of preparing subjects for student in sorted order
+	 * 
+	 * @param request
+	 * @param response
+	 * @throws ClassNotFoundException when DBManager class isn't found
+	 */
 	public String sortStudentSubjects(HttpServletRequest request, HttpServletResponse response)
 			throws ClassNotFoundException {
+		LOG.debug("started");
 		String forward = "";
 		List<Course> list;
 		User user = (User) request.getSession().getAttribute("user");
@@ -186,10 +214,18 @@ public class SortingCoursesCommand extends Command {
 		request.setAttribute("list", list);
 		request.setAttribute("distCourse", distCourse);
 		forward = "WEB-INF\\jsp\\student\\preparingCourses.jsp";
+		LOG.debug("finished");
 		return forward;
 	}
 
+	/**
+	 * Admin receives the list of ordered by students count courses
+	 * 
+	 * @param request
+	 * @param response
+	 */
 	public String sortPopulars(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
 		String forward = "";
 		List<Course> list = new LinkedList<Course>();
 		HashSet<Integer> nums = new HashSet<>();
@@ -211,10 +247,18 @@ public class SortingCoursesCommand extends Command {
 			e.printStackTrace();
 		}
 		forward = "\\WEB-INF\\jsp\\admin\\coursesList.jsp";
+		LOG.debug("finished");
 		return forward;
 	}
 
+	/**
+	 * Sorting courses by leading teacher number
+	 * 
+	 * @param request
+	 * @param response
+	 */
 	public String teacherOrder(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
 		String forward = "";
 		List<Course> list = null;
 		String id = request.getParameter("teacherNum");
@@ -238,10 +282,18 @@ public class SortingCoursesCommand extends Command {
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
+		LOG.debug("finished");
 		return forward;
 	}
 
+	/**
+	 * Sorting courses by the term of study
+	 * 
+	 * @param request
+	 * @param response
+	 */
 	public String sortByTerms(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
 		String forward = "";
 		SortedBase dbSorting = null;
 		HashSet<Integer> nums = new HashSet<>();
@@ -265,11 +317,18 @@ public class SortingCoursesCommand extends Command {
 			e.printStackTrace();
 		}
 		forward = "\\WEB-INF\\jsp\\admin\\coursesList.jsp";
+		LOG.debug("finished");
 		return forward;
 	}
 
-//Sorting courses for administrator
+	/**
+	 * Sorts courses list of administrator
+	 * 
+	 * @param request
+	 * @param response
+	 */
 	public String sortAdminCourses(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
 		String forward = "";
 		List<Course> list = (List<Course>) request.getSession().getAttribute("list");
 		HashSet<Integer> nums = new HashSet<>();
@@ -287,10 +346,12 @@ public class SortingCoursesCommand extends Command {
 		request.setAttribute("courses", list);
 		request.setAttribute("teachersID", nums);
 		forward = "\\WEB-INF\\jsp\\admin\\coursesList.jsp";
+		LOG.debug("finished");
 		return forward;
 	}
 
 	public void sortedFinishedCourses(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
 		DBManager dbm;
 		try {
 			String subject = request.getParameter("subjSelect");
@@ -322,6 +383,7 @@ public class SortingCoursesCommand extends Command {
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
+		LOG.debug("finished");
 	}
 
 }

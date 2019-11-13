@@ -5,15 +5,14 @@ import java.lang.reflect.Method;
 import java.sql.SQLException;
 import java.util.Collections;
 import java.util.HashSet;
-import java.util.LinkedHashMap;
-import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import org.apache.log4j.Logger;
 
 import ua.nure.storozhuk.SummaryTask4.sql.DBManager;
 import ua.nure.storozhuk.SummaryTask4.sql.SortedBase;
@@ -21,47 +20,69 @@ import ua.nure.storozhuk.SummaryTask4.sql.entity.Course;
 import ua.nure.storozhuk.SummaryTask4.sql.entity.Journal;
 import ua.nure.storozhuk.SummaryTask4.sql.entity.User;
 
-//Class for getting course's information of one's student
+/**
+ * Command for processing student's requests about certain courses reading
+ *
+ */
 public class StudentCoursesCommand extends Command {
+	private static final long serialVersionUID = 1L;
+	private static final Logger LOG = Logger.getLogger(StudentCoursesCommand.class);
 
 	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
 		String forward = "";
-		if (request.getParameter("Coursecommand") == null) {
-			// forward = getCourses(request, response);
-		} else {
-			try {
-				Method method = this.getClass().getDeclaredMethod(request.getParameter("Coursecommand"),
-						HttpServletRequest.class, HttpServletResponse.class);
-				forward = (String) method.invoke(this, request, response);
-			} catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException
-					| NoSuchMethodException | SecurityException e) {
-				e.printStackTrace();
-			}
-			return forward;
+		try {
+			Method method = this.getClass().getDeclaredMethod(request.getParameter("Coursecommand"),
+					HttpServletRequest.class, HttpServletResponse.class);
+			forward = (String) method.invoke(this, request, response);
+		} catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException | NoSuchMethodException
+				| SecurityException e) {
+			e.printStackTrace();
 		}
+		LOG.debug("finished");
 		return forward;
 	}
 
-//Writes student to the course
+	/**
+	 * Applies student for the choosen course
+	 * 
+	 * @param request
+	 * @param response
+	 */
 	public String applyStudent(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
+		User user = (User) request.getSession().getAttribute("user");
 		String forward = "";
 		try {
 			DBManager dbm = new DBManager();
-			User user = (User) request.getSession().getAttribute("user");
-			String[] info = request.getSession().getAttribute("toMove").toString().split(",\\s");
-			dbm.applyStudent(info[0], info[1], user.getId());
-			request.getSession().removeAttribute("toMove");
+			if (!dbm.checkBlocked(user.getId())) {
+				String[] info = request.getSession().getAttribute("toMove").toString().split(",\\s");
+				dbm.applyStudent(info[0], info[1], user.getId());
+				request.getSession().removeAttribute("toMove");
+				forward = preparingCourses(request, response);
+			} else {
+				dbm.closeCon();
+				request.setAttribute("errType", "You are blocked and can't apply for a course");
+				LOG.trace("Blocked student tried to apply for a course. ID =" + user.getId());
+				return "WEB-INF\\jsp\\error.jsp";
+			}
 			dbm.closeCon();
-			forward = preparingCourses(request, response);
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
+		LOG.debug("finished");
 		return forward;
 	}
 
-//Courses the student hasn't applied for yet and hasn't begun yet	
+	/**
+	 * The list of courses studen't hasn't applied for yet and hasn't started
+	 * 
+	 * @param request
+	 * @param response
+	 */
 	public String otherCourses(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
 		String forward = "";
 		try {
 			DBManager dbm = new DBManager();
@@ -98,12 +119,18 @@ public class StudentCoursesCommand extends Command {
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
 		}
-
+		LOG.debug("finished");
 		return forward;
 	}
 
-//Courses which are in process	
+	/**
+	 * Courses applied by student and in progress now
+	 * 
+	 * @param request
+	 * @param response
+	 */
 	public String progressCourses(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
 		String forward = "";
 		try {
 			DBManager dbm = new DBManager();
@@ -140,12 +167,18 @@ public class StudentCoursesCommand extends Command {
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
 		}
-
+		LOG.debug("finished");
 		return forward;
 	}
 
-	// Get the list of courses which are not started yet
+	/**
+	 * List of applied by student courses but hasn't started yet
+	 * 
+	 * @param request
+	 * @param response
+	 */
 	public String preparingCourses(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
 		String forward = "";
 		try {
 			DBManager dbm = new DBManager();
@@ -165,11 +198,18 @@ public class StudentCoursesCommand extends Command {
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
 		}
+		LOG.debug("finished");
 		return forward;
 	}
 
-//Function to get the list of finished courses by student with mark and subject name
+	/**
+	 * Get the list of finished courses by student with mark and subject name
+	 * 
+	 * @param request
+	 * @param response
+	 */
 	public String finishedCourses(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
 		String forward = "";
 		if (request.getParameter("incommand") == null) {
 			DBManager dbm;
@@ -198,6 +238,7 @@ public class StudentCoursesCommand extends Command {
 			scc.execute(request, response);
 			forward = "WEB-INF\\jsp\\student\\finishedCourses.jsp";
 		}
+		LOG.debug("finished");
 		return forward;
 	}
 }

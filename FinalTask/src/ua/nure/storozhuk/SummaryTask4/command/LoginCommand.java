@@ -2,17 +2,25 @@ package ua.nure.storozhuk.SummaryTask4.command;
 
 import java.io.IOException;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import org.apache.log4j.Logger;
 
 import ua.nure.storozhuk.SummaryTask4.sql.DBManager;
 import ua.nure.storozhuk.SummaryTask4.sql.entity.User;
 
+/**
+ * Command object to login user
+ *
+ */
 public class LoginCommand extends Command{
+	private static final long serialVersionUID = 1L;
+	private static final Logger LOG = Logger.getLogger(LoginCommand.class);
 
 	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
 		String forward = "";
 		try {
 			DBManager dbm = new DBManager();
@@ -34,6 +42,7 @@ public class LoginCommand extends Command{
 		} catch (ClassNotFoundException | IOException e) {
 			e.printStackTrace();
 		}
+		LOG.debug("finished");
 		return forward;
 	}
 

@@ -4,7 +4,11 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Comparator;
 import java.util.Date;
-
+/**
+ * Course information
+ * @author Alex
+ *
+ */
 public class Course{
 	private int id;
 	private String subject;
@@ -72,6 +76,10 @@ public class Course{
 		return teacherId;
 	}
 	
+	/**
+	 * 
+	 * @return the time difference between end and start dates
+	 */
 	private int timeDif() {
 		Date date1 = null;
 		Date date2 = null;

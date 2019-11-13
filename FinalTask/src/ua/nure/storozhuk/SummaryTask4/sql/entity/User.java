@@ -1,5 +1,9 @@
 package ua.nure.storozhuk.SummaryTask4.sql.entity;
-
+/**
+ * User information
+ * @author Alex
+ *
+ */
 public class User {
 	private int id;
 	private String login, password, status;

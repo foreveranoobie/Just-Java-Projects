@@ -61,11 +61,14 @@
 				<td>${item.teacherId}</td>
 				<td style="border: none"><form name="ChangeForm" method="GET"
 						action="controller">
-						<c:set var="course" scope="session">${item.id}, ${item.subject}, ${item.start},
- ${item.end}, ${item.teacherId}</c:set>
 						<c:out value="${requestScope.enablebtnRelatedDocs }" />
 						<input type="hidden" name="command" value="getCourses" />
 						<input type="hidden" name="incommand" value="getUpdateList" /> 
+						<input type="hidden" name="courseId" value="${item.id}"/>
+						<input type="hidden" name="courseSubject" value="${item.subject}"/>
+						<input type="hidden" name="courseStart" value="${item.start}"/>
+						<input type="hidden" name="courseEnd" value="${item.end}"/>
+						<input type="hidden" name="courseTeacher" value="${item.teacherId}"/>
 						<button><lc:Loc word="Update" locale="${sessionScope.language}"/></button>
 					</form></td>
 				<td>

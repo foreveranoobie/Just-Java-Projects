@@ -4,9 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>request.getParameter("name")</title>
+<title>Error page</title>
 </head>
 <body>
 Error: <%= request.getAttribute("errType") %>
+<a href="index.jsp">To main page</a>
 </body>
 </html>

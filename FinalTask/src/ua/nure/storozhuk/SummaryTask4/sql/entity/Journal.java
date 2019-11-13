@@ -2,6 +2,11 @@ package ua.nure.storozhuk.SummaryTask4.sql.entity;
 
 import java.util.Comparator;
 
+/**
+ * Journal entity
+ * @author Alex
+ *
+ */
 public class Journal {
 	private int courseId;
 	private int studentId;
@@ -54,7 +59,7 @@ public class Journal {
 		return new Comparator<Journal>(){
 			@Override
 			public int compare(Journal o1, Journal o2) {
-				return o1.getMark() - o2.getMark();
+				return -(o1.getMark() - o2.getMark());
 			}};
 	}
 	

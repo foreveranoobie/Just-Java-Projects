@@ -1,7 +1,11 @@
 package ua.nure.storozhuk.SummaryTask4.sql.entity;
 
 import java.util.Comparator;
-
+/**
+ * Students applied for a course
+ * @author Alex
+ *
+ */
 public class StudentsCourse {
 	private int courseId;
 	private int studentId;

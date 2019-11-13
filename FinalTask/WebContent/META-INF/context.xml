@@ -9,5 +9,5 @@
         username="root"
         password="67245"
         driverClassName="com.mysql.cj.jdbc.Driver"
-        url="jdbc:mysql://localhost/final_schema"/>
+        url="jdbc:mysql://localhost/finaltask"/>
 </Context>

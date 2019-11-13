@@ -10,6 +10,8 @@
 </head>
 <body>
 <ex:Logout locale="${sessionScope.language}"/>
+<br />
+<a href="controller?command=changeLanguage">EN/RU</a>
 <lc:Loc word="You are blocked" locale="${sessionScope.language}"/>!
 </body>
 </html>

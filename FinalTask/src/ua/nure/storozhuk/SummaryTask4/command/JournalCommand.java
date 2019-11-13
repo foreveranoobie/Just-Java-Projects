@@ -9,15 +9,25 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.log4j.Logger;
+
 import ua.nure.storozhuk.SummaryTask4.sql.DBManager;
 import ua.nure.storozhuk.SummaryTask4.sql.entity.Journal;
 import ua.nure.storozhuk.SummaryTask4.sql.entity.StudentsCourse;
 import ua.nure.storozhuk.SummaryTask4.sql.entity.User;
 
+/**
+ * Object to work with the teachers requests related to the journal
+ *
+ */
 public class JournalCommand extends Command {
+
+	private static final long serialVersionUID = 1L;
+	private static final Logger LOG = Logger.getLogger(JournalCommand.class);
 
 	@Override
 	public String execute(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
 		String forward = "";
 		if (request.getParameter("incommand") == null) {
 			forward = getCurrentCourses(request, response);
@@ -32,10 +42,16 @@ public class JournalCommand extends Command {
 			}
 			return forward;
 		}
+		LOG.debug("finished");
 		return forward;
 	}
-	
+/**
+ * Sorting courses which aren't finished
+ * @param request
+ * @param response
+ */
 	public void getSortedCourses(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
 		DBManager dbm;
 		try {
 			dbm = new DBManager();
@@ -43,9 +59,9 @@ public class JournalCommand extends Command {
 			String subj = request.getParameter("subjectSort");
 			int id = user.getId();
 			List<StudentsCourse> list = new LinkedList<>();
-			if(subj.equals("All")) {
+			if (subj.equals("All")) {
 				list = dbm.getTeacherCourses(id);
-			}else {
+			} else {
 				list = dbm.getTeacherCourses(id, subj);
 			}
 			request.setAttribute("journal", list);
@@ -65,9 +81,15 @@ public class JournalCommand extends Command {
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
+		LOG.debug("finished");
 	}
-
+/**
+ * Sorting the journal of finished courses
+ * @param request
+ * @param response
+ */
 	public void getSortedJournal(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
 		DBManager dbm;
 		try {
 			dbm = new DBManager();
@@ -75,9 +97,9 @@ public class JournalCommand extends Command {
 			String subj = request.getParameter("subjectSort");
 			int id = user.getId();
 			List<Journal> list = new LinkedList<>();
-			if(subj.equals("All")) {
+			if (subj.equals("All")) {
 				list = dbm.getJournal(id);
-			}else {
+			} else {
 				list = dbm.getJournal(id, subj);
 			}
 			request.setAttribute("journal", list);
@@ -96,9 +118,16 @@ public class JournalCommand extends Command {
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
+		LOG.debug("finished");
 	}
-
+/**
+ * Receives the main information about courses and if sortCommand
+ * is contained in request it calls the sorting functions next
+ * @param request
+ * @param response
+ */
 	public String getCurrentCourses(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
 		String forward = "";
 		try {
 			if (request.getParameter("toSort") == null) {
@@ -127,15 +156,21 @@ public class JournalCommand extends Command {
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
+		LOG.debug("finished");
 		return forward;
 	}
 
 	public String setMark(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
 		String forward = "";
 		String[] nums = request.getSession().getAttribute("toMove").toString().split(",\\s");
 		int courseId = Integer.valueOf(nums[0]);
 		int studentId = Integer.valueOf(nums[1]);
 		int mark = Integer.valueOf(request.getParameter("mark"));
+		if(mark < 1 || mark > 5) {
+			request.setAttribute("errType", "Wrong mark. Should be IN 1-5");
+			return "WEB-INF\\jsp\\error.jsp";
+		}
 		try {
 			DBManager dbm = new DBManager();
 			dbm.setMark(courseId, studentId, mark);
@@ -145,6 +180,7 @@ public class JournalCommand extends Command {
 		}
 		request.getSession().removeAttribute("toMove");
 		forward = getCurrentCourses(request, response);
+		LOG.debug("finished");
 		return forward;
 	}
 
