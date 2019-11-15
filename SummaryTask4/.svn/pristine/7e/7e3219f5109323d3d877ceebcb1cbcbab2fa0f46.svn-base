@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <Context crossContext="true">
+ 
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+     
+   <Resource name="jdbc/finalDB" auth="Container"
+        type="javax.sql.DataSource"
+        maxTotal="100" maxIdle="30" maxWaitMillis="10000"
+        username="root"
+        password="67245"
+        driverClassName="com.mysql.cj.jdbc.Driver"
+        useLegacyDateTimeCode="false"
+        url="jdbc:mysql://localhost/finaltask?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"/>
+</Context>

@@ -1,0 +1,46 @@
+	(DBManager)public List<Journal> getFinishedJournal(int studentId, int mark) {
+		List<Journal> coursesResult = new LinkedList<>();
+		try {
+			rs = st.executeQuery("SELECT courses.subject, journal.mark FROM courses JOIN "
+					+ "journal ON courses.id = journal.course_id WHERE journal.student_id =" + studentId
+					+ " AND journal.mark='" + mark + "'");
+			while (rs.next()) {
+				coursesResult.add(new Journal(0, 0, rs.getInt(2), rs.getString(1)));
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return coursesResult;
+	}
+
+	(SortedBase)public List<String> getDistinctUser(String param, int id) throws SQLException {
+		List<String> list = new LinkedList<>();
+		rs = st.executeQuery("select distinct " + param + " from users where id=" + id);
+		while (rs.next()) {
+			list.add(rs.getString(1));
+		}
+		return list;
+	}
+
+	(SortingCoursesCommand)public String sortStudentTeachers(HttpServletRequest request, HttpServletResponse response) {
+		LOG.debug("started");
+		String forward = "";
+		User user = (User) request.getAttribute("user");
+		int teacherId = Integer.valueOf(request.getParameter("teacherID"));
+		DBManager dbm;
+		try {
+			dbm = new DBManager();
+			List<Course> list = dbm.getProcessingCourses(user.getId());
+			List<Course> result = new LinkedList<Course>();
+			for (Course course : list) {
+				if (course.getTeacherId() == teacherId) {
+					result.add(course);
+				}
+			}
+			dbm.closeCon();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		LOG.debug("finished");
+		return forward;
+	}

@@ -1,0 +1,1288 @@
+2019-11-13 10:26 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 10:26 [DEBUG]              LoginCommandexecute     19 - started
+2019-11-13 10:26 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 10:26 [DEBUG]              LoginCommandexecute     19 - started
+2019-11-13 10:26 [TRACE]       SessionListenerImplattributeAdded     27 - Attribute added user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@2004c15e]
+2019-11-13 10:26 [TRACE]       SessionListenerImplattributeReplaced     41 - Attribute replaced user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@2004c15e]
+2019-11-13 10:26 [DEBUG]              LoginCommandexecute     41 - finished
+2019-11-13 10:26 [DEBUG]              LoginCommandexecute     41 - finished
+2019-11-13 10:26 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 10:26 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 10:26 [DEBUG]         GetCoursesCommandexecute     30 - Incommand == null
+2019-11-13 10:26 [DEBUG]         GetCoursesCommandgetCourses    126 - GetCoursesCommand.getCourses started
+2019-11-13 10:26 [DEBUG]         GetCoursesCommandgetCourses    143 - GetCoursesCommand.getCourses finished
+2019-11-13 10:26 [DEBUG]         GetCoursesCommandexecute     43 - finished
+2019-11-13 10:26 [TRACE]       SessionListenerImplattributeAdded     27 - Attribute added list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@2004c15e]
+2019-11-13 10:26 [TRACE]       SessionListenerImplattributeReplaced     41 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@2004c15e]
+2019-11-13 10:26 [TRACE]       SessionListenerImplattributeAdded     27 - Attribute added course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@2004c15e]
+2019-11-13 10:26 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 10:26 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 10:26 [DEBUG]           GetUsersCommandexecute     22 - GetUsersCommand started
+2019-11-13 10:26 [DEBUG]           GetUsersCommandgetUsers     94 - started
+2019-11-13 10:26 [TRACE]       SessionListenerImplattributeAdded     27 - Attribute added usersList javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@2004c15e]
+2019-11-13 10:26 [TRACE]       SessionListenerImplattributeAdded     27 - Attribute added requestsList javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@2004c15e]
+2019-11-13 10:26 [DEBUG]           GetUsersCommandgetUsers    109 - finished
+2019-11-13 10:26 [DEBUG]           GetUsersCommandexecute     25 - incommand == null. Finished
+2019-11-13 10:26 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 10:26 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 10:26 [DEBUG]           GetUsersCommandexecute     22 - GetUsersCommand started
+2019-11-13 10:26 [DEBUG]           GetUsersCommandblockStudent     76 - started
+2019-11-13 10:26 [TRACE]                 DBManagerblockStudent    341 - student (id)4 has been blocked
+2019-11-13 10:26 [DEBUG]           GetUsersCommandgetUsers     94 - started
+2019-11-13 10:26 [TRACE]       SessionListenerImplattributeReplaced     41 - Attribute replaced usersList javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@2004c15e]
+2019-11-13 10:26 [TRACE]       SessionListenerImplattributeReplaced     41 - Attribute replaced requestsList javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@2004c15e]
+2019-11-13 10:26 [DEBUG]           GetUsersCommandgetUsers    109 - finished
+2019-11-13 10:26 [DEBUG]           GetUsersCommandblockStudent     89 - finished
+2019-11-13 10:26 [DEBUG]           GetUsersCommandexecute     36 - GetUsersCommand finished
+2019-11-13 10:26 [DEBUG]                ControllerdoPost     60 - doPost forward
+2019-11-13 10:26 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 10:26 [DEBUG]             LogoutCommandexecute     15 - started
+2019-11-13 10:26 [TRACE]       SessionListenerImplattributeRemoved     34 - Attribute removed usersList javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@2004c15e]
+2019-11-13 10:26 [TRACE]       SessionListenerImplattributeRemoved     34 - Attribute removed requestsList javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@2004c15e]
+2019-11-13 10:26 [TRACE]       SessionListenerImplattributeRemoved     34 - Attribute removed course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@2004c15e]
+2019-11-13 10:26 [TRACE]       SessionListenerImplattributeRemoved     34 - Attribute removed list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@2004c15e]
+2019-11-13 10:26 [TRACE]       SessionListenerImplattributeRemoved     34 - Attribute removed user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@2004c15e]
+2019-11-13 10:26 [DEBUG]             LogoutCommandexecute     32 - finished
+2019-11-13 10:26 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 10:26 [DEBUG]              LoginCommandexecute     19 - started
+2019-11-13 10:26 [TRACE]       SessionListenerImplattributeAdded     27 - Attribute added user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4b13ecef]
+2019-11-13 10:26 [DEBUG]              LoginCommandexecute     41 - finished
+2019-11-13 10:26 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 10:26 [DEBUG]             LogoutCommandexecute     15 - started
+2019-11-13 10:26 [TRACE]       SessionListenerImplattributeRemoved     34 - Attribute removed user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4b13ecef]
+2019-11-13 10:26 [DEBUG]             LogoutCommandexecute     32 - finished
+2019-11-13 10:26 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 10:26 [DEBUG]              LoginCommandexecute     19 - started
+2019-11-13 10:26 [TRACE]       SessionListenerImplattributeAdded     27 - Attribute added user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@661cdf59]
+2019-11-13 10:26 [DEBUG]              LoginCommandexecute     41 - finished
+2019-11-13 10:26 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 10:26 [DEBUG]     StudentCoursesCommandexecute     32 - started
+2019-11-13 10:26 [DEBUG]     StudentCoursesCommandotherCourses     80 - started
+2019-11-13 10:26 [DEBUG]     StudentCoursesCommandotherCourses    117 - finished
+2019-11-13 10:26 [DEBUG]     StudentCoursesCommandexecute     45 - finished
+2019-11-13 10:26 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 10:26 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 10:26 [DEBUG]           LanguageCommandexecute     14 - started
+2019-11-13 10:26 [TRACE]       SessionListenerImplattributeAdded     27 - Attribute added language javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@661cdf59]
+2019-11-13 10:26 [TRACE]           LanguageCommandexecute     21 - Session language has been changed to english
+2019-11-13 10:26 [DEBUG]           LanguageCommandexecute     29 - finished
+2019-11-13 10:26 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 10:26 [DEBUG]     StudentCoursesCommandexecute     32 - started
+2019-11-13 10:26 [DEBUG]     StudentCoursesCommandotherCourses     80 - started
+2019-11-13 10:26 [DEBUG]     StudentCoursesCommandotherCourses    117 - finished
+2019-11-13 10:26 [DEBUG]     StudentCoursesCommandexecute     45 - finished
+2019-11-13 10:26 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 10:26 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 10:26 [DEBUG]     StudentCoursesCommandexecute     32 - started
+2019-11-13 10:26 [DEBUG]     StudentCoursesCommandotherCourses     80 - started
+2019-11-13 10:26 [DEBUG]     StudentCoursesCommandotherCourses    117 - finished
+2019-11-13 10:26 [DEBUG]     StudentCoursesCommandexecute     45 - finished
+2019-11-13 10:26 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 10:26 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 10:26 [DEBUG]     StudentCoursesCommandexecute     32 - started
+2019-11-13 10:26 [DEBUG]     StudentCoursesCommandpreparingCourses    166 - started
+2019-11-13 10:26 [DEBUG]     StudentCoursesCommandpreparingCourses    186 - finished
+2019-11-13 10:26 [DEBUG]     StudentCoursesCommandexecute     45 - finished
+2019-11-13 10:26 [TRACE]       SessionListenerImplattributeAdded     27 - Attribute added subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@661cdf59]
+2019-11-13 10:26 [TRACE]       SessionListenerImplattributeAdded     27 - Attribute added courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@661cdf59]
+2019-11-13 10:26 [TRACE]       SessionListenerImplattributeReplaced     41 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@661cdf59]
+2019-11-13 10:26 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 10:27 [TRACE]       SessionListenerImplattributeRemoved     34 - Attribute removed user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@661cdf59]
+2019-11-13 13:26 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 13:26 [DEBUG]              LoginCommandexecute     19 - started
+2019-11-13 13:26 [TRACE]       SessionListenerImplattributeAdded     27 - Attribute added user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4d73d352]
+2019-11-13 13:26 [DEBUG]              LoginCommandexecute     41 - finished
+2019-11-13 13:26 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:26 [DEBUG]     StudentCoursesCommandexecute     32 - started
+2019-11-13 13:26 [DEBUG]     StudentCoursesCommandotherCourses     80 - started
+2019-11-13 13:26 [DEBUG]     StudentCoursesCommandotherCourses    117 - finished
+2019-11-13 13:26 [DEBUG]     StudentCoursesCommandexecute     45 - finished
+2019-11-13 13:26 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 13:26 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:26 [DEBUG]     StudentCoursesCommandexecute     32 - started
+2019-11-13 13:26 [DEBUG]     StudentCoursesCommandfinishedCourses    192 - started
+2019-11-13 13:26 [DEBUG]     StudentCoursesCommandfinishedCourses    221 - finished
+2019-11-13 13:26 [DEBUG]     StudentCoursesCommandexecute     45 - finished
+2019-11-13 13:26 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 13:26 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:26 [DEBUG]     StudentCoursesCommandexecute     32 - started
+2019-11-13 13:26 [DEBUG]     StudentCoursesCommandfinishedCourses    192 - started
+2019-11-13 13:26 [DEBUG]     StudentCoursesCommandfinishedCourses    221 - finished
+2019-11-13 13:26 [DEBUG]     StudentCoursesCommandexecute     45 - finished
+2019-11-13 13:26 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 13:26 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:26 [DEBUG]     StudentCoursesCommandexecute     32 - started
+2019-11-13 13:26 [DEBUG]     StudentCoursesCommandfinishedCourses    192 - started
+2019-11-13 13:26 [DEBUG]     StudentCoursesCommandfinishedCourses    221 - finished
+2019-11-13 13:26 [DEBUG]     StudentCoursesCommandexecute     45 - finished
+2019-11-13 13:26 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 13:27 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:27 [DEBUG]     StudentCoursesCommandexecute     32 - started
+2019-11-13 13:27 [DEBUG]     StudentCoursesCommandprogressCourses    123 - started
+2019-11-13 13:27 [DEBUG]     StudentCoursesCommandprogressCourses    160 - finished
+2019-11-13 13:27 [DEBUG]     StudentCoursesCommandexecute     45 - finished
+2019-11-13 13:27 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 13:27 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:27 [DEBUG]     StudentCoursesCommandexecute     32 - started
+2019-11-13 13:27 [DEBUG]     StudentCoursesCommandfinishedCourses    192 - started
+2019-11-13 13:27 [DEBUG]     StudentCoursesCommandfinishedCourses    221 - finished
+2019-11-13 13:27 [DEBUG]     StudentCoursesCommandexecute     45 - finished
+2019-11-13 13:27 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 13:30 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:30 [DEBUG]     StudentCoursesCommandexecute     32 - started
+2019-11-13 13:30 [DEBUG]     StudentCoursesCommandfinishedCourses    192 - started
+2019-11-13 13:30 [DEBUG]     StudentCoursesCommandfinishedCourses    221 - finished
+2019-11-13 13:30 [DEBUG]     StudentCoursesCommandexecute     45 - finished
+2019-11-13 13:30 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 13:30 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:30 [DEBUG]     StudentCoursesCommandexecute     32 - started
+2019-11-13 13:30 [DEBUG]     StudentCoursesCommandfinishedCourses    192 - started
+2019-11-13 13:30 [DEBUG]     SortingCoursesCommandexecute     28 - started
+2019-11-13 13:30 [DEBUG]     SortingCoursesCommandsortedFinishedCourses    318 - started
+2019-11-13 13:30 [DEBUG]     SortingCoursesCommandsortedFinishedCourses    350 - finished
+2019-11-13 13:30 [DEBUG]     SortingCoursesCommandexecute     40 - finished
+2019-11-13 13:30 [DEBUG]     StudentCoursesCommandfinishedCourses    221 - finished
+2019-11-13 13:30 [DEBUG]     StudentCoursesCommandexecute     45 - finished
+2019-11-13 13:30 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 13:30 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:30 [DEBUG]     StudentCoursesCommandexecute     32 - started
+2019-11-13 13:30 [DEBUG]     StudentCoursesCommandfinishedCourses    192 - started
+2019-11-13 13:30 [DEBUG]     SortingCoursesCommandexecute     28 - started
+2019-11-13 13:30 [DEBUG]     SortingCoursesCommandsortedFinishedCourses    318 - started
+2019-11-13 13:30 [DEBUG]     SortingCoursesCommandsortedFinishedCourses    350 - finished
+2019-11-13 13:30 [DEBUG]     SortingCoursesCommandexecute     40 - finished
+2019-11-13 13:30 [DEBUG]     StudentCoursesCommandfinishedCourses    221 - finished
+2019-11-13 13:30 [DEBUG]     StudentCoursesCommandexecute     45 - finished
+2019-11-13 13:30 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 13:31 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandexecute     32 - started
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandfinishedCourses    192 - started
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandexecute     28 - started
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandsortedFinishedCourses    318 - started
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandsortedFinishedCourses    350 - finished
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandexecute     40 - finished
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandfinishedCourses    221 - finished
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandexecute     45 - finished
+2019-11-13 13:31 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 13:31 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandexecute     32 - started
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandfinishedCourses    192 - started
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandexecute     28 - started
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandsortedFinishedCourses    318 - started
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandsortedFinishedCourses    350 - finished
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandexecute     40 - finished
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandfinishedCourses    221 - finished
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandexecute     45 - finished
+2019-11-13 13:31 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 13:31 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandexecute     32 - started
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandfinishedCourses    192 - started
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandexecute     28 - started
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandsortedFinishedCourses    318 - started
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandsortedFinishedCourses    350 - finished
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandexecute     40 - finished
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandfinishedCourses    221 - finished
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandexecute     45 - finished
+2019-11-13 13:31 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 13:31 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandexecute     32 - started
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandfinishedCourses    192 - started
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandexecute     28 - started
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandsortedFinishedCourses    318 - started
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandsortedFinishedCourses    350 - finished
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandexecute     40 - finished
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandfinishedCourses    221 - finished
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandexecute     45 - finished
+2019-11-13 13:31 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 13:31 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandexecute     32 - started
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandfinishedCourses    192 - started
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandexecute     28 - started
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandsortedFinishedCourses    318 - started
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandsortedFinishedCourses    350 - finished
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandexecute     40 - finished
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandfinishedCourses    221 - finished
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandexecute     45 - finished
+2019-11-13 13:31 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 13:31 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandexecute     32 - started
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandfinishedCourses    192 - started
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandexecute     28 - started
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandsortedFinishedCourses    318 - started
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandsortedFinishedCourses    350 - finished
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandexecute     40 - finished
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandfinishedCourses    221 - finished
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandexecute     45 - finished
+2019-11-13 13:31 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 13:31 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandexecute     32 - started
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandfinishedCourses    192 - started
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandexecute     28 - started
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandsortedFinishedCourses    318 - started
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandsortedFinishedCourses    350 - finished
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandexecute     40 - finished
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandfinishedCourses    221 - finished
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandexecute     45 - finished
+2019-11-13 13:31 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 13:31 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandexecute     32 - started
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandfinishedCourses    192 - started
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandexecute     28 - started
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandsortedFinishedCourses    318 - started
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandsortedFinishedCourses    350 - finished
+2019-11-13 13:31 [DEBUG]     SortingCoursesCommandexecute     40 - finished
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandfinishedCourses    221 - finished
+2019-11-13 13:31 [DEBUG]     StudentCoursesCommandexecute     45 - finished
+2019-11-13 13:31 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 13:32 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:32 [DEBUG]             LogoutCommandexecute     15 - started
+2019-11-13 13:32 [TRACE]       SessionListenerImplattributeRemoved     34 - Attribute removed user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4d73d352]
+2019-11-13 13:32 [DEBUG]             LogoutCommandexecute     32 - finished
+2019-11-13 13:32 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 13:32 [DEBUG]              LoginCommandexecute     19 - started
+2019-11-13 13:32 [TRACE]       SessionListenerImplattributeAdded     27 - Attribute added user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@7a25aa39]
+2019-11-13 13:32 [DEBUG]              LoginCommandexecute     41 - finished
+2019-11-13 13:32 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:32 [DEBUG]            JournalCommandexecute     25 - started
+2019-11-13 13:32 [DEBUG]            JournalCommandgetCurrentCourses    112 - started
+2019-11-13 13:32 [DEBUG]            JournalCommandgetCurrentCourses    141 - finished
+2019-11-13 13:32 [DEBUG]            JournalCommandexecute     40 - finished
+2019-11-13 13:32 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 13:32 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:32 [DEBUG]            JournalCommandexecute     25 - started
+2019-11-13 13:32 [DEBUG]            JournalCommandgetCurrentCourses    112 - started
+2019-11-13 13:32 [DEBUG]            JournalCommandgetSortedJournal     79 - started
+2019-11-13 13:32 [DEBUG]            JournalCommandgetSortedJournal    108 - finished
+2019-11-13 13:32 [DEBUG]            JournalCommandgetCurrentCourses    141 - finished
+2019-11-13 13:32 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 13:32 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:32 [DEBUG]            JournalCommandexecute     25 - started
+2019-11-13 13:32 [DEBUG]            JournalCommandgetCurrentCourses    112 - started
+2019-11-13 13:32 [DEBUG]            JournalCommandgetSortedJournal     79 - started
+2019-11-13 13:32 [DEBUG]            JournalCommandgetSortedJournal    108 - finished
+2019-11-13 13:32 [DEBUG]            JournalCommandgetCurrentCourses    141 - finished
+2019-11-13 13:32 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 13:32 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:32 [DEBUG]            JournalCommandexecute     25 - started
+2019-11-13 13:32 [DEBUG]            JournalCommandgetCurrentCourses    112 - started
+2019-11-13 13:32 [DEBUG]            JournalCommandgetSortedJournal     79 - started
+2019-11-13 13:32 [DEBUG]            JournalCommandgetSortedJournal    108 - finished
+2019-11-13 13:32 [DEBUG]            JournalCommandgetCurrentCourses    141 - finished
+2019-11-13 13:32 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 13:32 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:32 [DEBUG]            JournalCommandexecute     25 - started
+2019-11-13 13:32 [DEBUG]            JournalCommandgetCurrentCourses    112 - started
+2019-11-13 13:32 [DEBUG]            JournalCommandgetSortedJournal     79 - started
+2019-11-13 13:32 [DEBUG]            JournalCommandgetSortedJournal    108 - finished
+2019-11-13 13:32 [DEBUG]            JournalCommandgetCurrentCourses    141 - finished
+2019-11-13 13:32 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 13:32 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:32 [DEBUG]            JournalCommandexecute     25 - started
+2019-11-13 13:32 [DEBUG]            JournalCommandgetCurrentCourses    112 - started
+2019-11-13 13:32 [DEBUG]            JournalCommandgetSortedJournal     79 - started
+2019-11-13 13:32 [DEBUG]            JournalCommandgetSortedJournal    108 - finished
+2019-11-13 13:32 [DEBUG]            JournalCommandgetCurrentCourses    141 - finished
+2019-11-13 13:32 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 13:32 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:32 [DEBUG]            JournalCommandexecute     25 - started
+2019-11-13 13:32 [DEBUG]            JournalCommandgetCurrentCourses    112 - started
+2019-11-13 13:32 [DEBUG]            JournalCommandgetSortedJournal     79 - started
+2019-11-13 13:32 [DEBUG]            JournalCommandgetSortedJournal    108 - finished
+2019-11-13 13:32 [DEBUG]            JournalCommandgetCurrentCourses    141 - finished
+2019-11-13 13:32 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 13:32 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:32 [DEBUG]            JournalCommandexecute     25 - started
+2019-11-13 13:32 [DEBUG]            JournalCommandgetCurrentCourses    112 - started
+2019-11-13 13:32 [DEBUG]            JournalCommandgetSortedCourses     45 - started
+2019-11-13 13:32 [DEBUG]            JournalCommandgetSortedCourses     75 - finished
+2019-11-13 13:32 [DEBUG]            JournalCommandgetCurrentCourses    141 - finished
+2019-11-13 13:32 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 13:32 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 13:32 [DEBUG]            JournalCommandexecute     25 - started
+2019-11-13 13:32 [DEBUG]            JournalCommandgetCurrentCourses    112 - started
+2019-11-13 13:32 [DEBUG]            JournalCommandgetCurrentCourses    141 - finished
+2019-11-13 13:32 [DEBUG]            JournalCommandexecute     40 - finished
+2019-11-13 13:32 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 13:33 [TRACE]       SessionListenerImplattributeRemoved     34 - Attribute removed user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@7a25aa39]
+2019-11-13 14:24 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 14:24 [DEBUG]              LoginCommandexecute     19 - started
+2019-11-13 14:24 [TRACE]       SessionListenerImplattributeAdded     27 - Attribute added user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@67e44369]
+2019-11-13 14:24 [DEBUG]              LoginCommandexecute     41 - finished
+2019-11-13 14:24 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 14:24 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 14:24 [DEBUG]         GetCoursesCommandexecute     30 - Incommand == null
+2019-11-13 14:24 [DEBUG]         GetCoursesCommandgetCourses    126 - GetCoursesCommand.getCourses started
+2019-11-13 14:24 [DEBUG]         GetCoursesCommandgetCourses    143 - GetCoursesCommand.getCourses finished
+2019-11-13 14:24 [DEBUG]         GetCoursesCommandexecute     43 - finished
+2019-11-13 14:24 [TRACE]       SessionListenerImplattributeAdded     27 - Attribute added list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@67e44369]
+2019-11-13 14:24 [TRACE]       SessionListenerImplattributeReplaced     41 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@67e44369]
+2019-11-13 14:24 [TRACE]       SessionListenerImplattributeAdded     27 - Attribute added course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@67e44369]
+2019-11-13 14:24 [TRACE]       SessionListenerImplattributeReplaced     41 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@67e44369]
+2019-11-13 14:24 [TRACE]       SessionListenerImplattributeReplaced     41 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@67e44369]
+2019-11-13 14:24 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 14:24 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 14:24 [DEBUG]     SortingCoursesCommandexecute     28 - started
+2019-11-13 14:24 [DEBUG]     SortingCoursesCommandteacherOrder    236 - started
+2019-11-13 14:24 [DEBUG]     SortingCoursesCommandteacherOrder    260 - finished
+2019-11-13 14:24 [DEBUG]     SortingCoursesCommandexecute     40 - finished
+2019-11-13 14:24 [TRACE]       SessionListenerImplattributeReplaced     41 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@67e44369]
+2019-11-13 14:24 [TRACE]       SessionListenerImplattributeReplaced     41 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@67e44369]
+2019-11-13 14:24 [TRACE]       SessionListenerImplattributeReplaced     41 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@67e44369]
+2019-11-13 14:24 [TRACE]       SessionListenerImplattributeReplaced     41 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@67e44369]
+2019-11-13 14:24 [TRACE]       SessionListenerImplattributeReplaced     41 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@67e44369]
+2019-11-13 14:24 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 14:27 [TRACE]       SessionListenerImplattributeRemoved     34 - Attribute removed user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@67e44369]
+2019-11-13 14:54 [TRACE]       SessionListenerImplattributeRemoved     34 - Attribute removed course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@51f28c9e]
+2019-11-13 15:55 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 15:55 [DEBUG]             LogoutCommandexecute     22 - started
+2019-11-13 15:55 [DEBUG]             LogoutCommandexecute     39 - finished
+2019-11-13 15:56 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 15:56 [DEBUG]           LanguageCommandexecute     20 - started
+2019-11-13 15:56 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added language javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@452d1e97]
+2019-11-13 15:56 [TRACE]           LanguageCommandexecute     27 - Session language has been changed to english
+2019-11-13 15:56 [DEBUG]           LanguageCommandexecute     35 - finished
+2019-11-13 18:02 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 18:02 [DEBUG]              LoginCommandexecute     23 - started
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [DEBUG]              LoginCommandexecute     45 - finished
+2019-11-13 18:02 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandexecute     30 - Incommand == null
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandgetCourses    147 - started
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandgetCourses    164 - finished
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandexecute     44 - finished
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:02 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandgetUpdateList     97 - started
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandgetUpdateList    104 - finished
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandexecute     41 - finished
+2019-11-13 18:02 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:02 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandexecute     30 - Incommand == null
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandgetCourses    147 - started
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandgetCourses    164 - finished
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandexecute     44 - finished
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:02 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandgetUpdateList     97 - started
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandgetUpdateList    104 - finished
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandexecute     41 - finished
+2019-11-13 18:02 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:02 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandexecute     30 - Incommand == null
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandgetCourses    147 - started
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandgetCourses    164 - finished
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandexecute     44 - finished
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:02 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandgetUpdateList     97 - started
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandgetUpdateList    104 - finished
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandexecute     41 - finished
+2019-11-13 18:02 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:02 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandexecute     30 - Incommand == null
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandgetCourses    147 - started
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandgetCourses    164 - finished
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandexecute     44 - finished
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:02 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandgetUpdateList     97 - started
+2019-11-13 18:02 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandgetUpdateList    104 - finished
+2019-11-13 18:02 [DEBUG]         GetCoursesCommandexecute     41 - finished
+2019-11-13 18:02 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:04 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:04 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 18:04 [DEBUG]         GetCoursesCommandgetUpdateList     97 - started
+2019-11-13 18:04 [DEBUG]         GetCoursesCommandexecute     41 - finished
+2019-11-13 18:04 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:05 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandexecute     30 - Incommand == null
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandgetCourses    147 - started
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandgetCourses    164 - finished
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandexecute     44 - finished
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:05 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandgetUpdateList     97 - started
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandgetUpdateList    104 - finished
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandexecute     41 - finished
+2019-11-13 18:05 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:05 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandexecute     30 - Incommand == null
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandgetCourses    147 - started
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandgetCourses    164 - finished
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandexecute     44 - finished
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:05 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandgetUpdateList     97 - started
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandgetUpdateList    104 - finished
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandexecute     41 - finished
+2019-11-13 18:05 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:05 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandexecute     30 - Incommand == null
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandgetCourses    147 - started
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandgetCourses    164 - finished
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandexecute     44 - finished
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:05 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandgetUpdateList     97 - started
+2019-11-13 18:05 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandgetUpdateList    104 - finished
+2019-11-13 18:05 [DEBUG]         GetCoursesCommandexecute     41 - finished
+2019-11-13 18:05 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:11 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:11 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 18:11 [DEBUG]         GetCoursesCommandexecute     30 - Incommand == null
+2019-11-13 18:11 [DEBUG]         GetCoursesCommandgetCourses    147 - started
+2019-11-13 18:11 [DEBUG]         GetCoursesCommandgetCourses    164 - finished
+2019-11-13 18:11 [DEBUG]         GetCoursesCommandexecute     44 - finished
+2019-11-13 18:11 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:11 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:11 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:11 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:11 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:11 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:11 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:11 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:11 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:31 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:31 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 18:31 [DEBUG]         GetCoursesCommandexecute     30 - Incommand == null
+2019-11-13 18:31 [DEBUG]         GetCoursesCommandgetCourses    147 - started
+2019-11-13 18:31 [DEBUG]         GetCoursesCommandgetCourses    164 - finished
+2019-11-13 18:31 [DEBUG]         GetCoursesCommandexecute     44 - finished
+2019-11-13 18:31 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:31 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:31 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:31 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:31 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 18:31 [DEBUG]         GetCoursesCommandgetUpdateList     97 - started
+2019-11-13 18:31 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed course javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:31 [DEBUG]         GetCoursesCommandgetUpdateList    104 - finished
+2019-11-13 18:31 [DEBUG]         GetCoursesCommandexecute     41 - finished
+2019-11-13 18:31 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:32 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandexecute     30 - Incommand == null
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandgetCourses    147 - started
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandgetCourses    164 - finished
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandexecute     44 - finished
+2019-11-13 18:32 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:32 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:32 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:32 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandgetUpdateList     97 - started
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandexecute     41 - finished
+2019-11-13 18:32 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:32 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandexecute     30 - Incommand == null
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandgetCourses    147 - started
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandgetCourses    164 - finished
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandexecute     44 - finished
+2019-11-13 18:32 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:32 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:32 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:32 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandgetUpdateList     97 - started
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandexecute     41 - finished
+2019-11-13 18:32 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:32 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandexecute     30 - Incommand == null
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandgetCourses    147 - started
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandgetCourses    164 - finished
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandexecute     44 - finished
+2019-11-13 18:32 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:32 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:32 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:32 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandgetUpdateList     97 - started
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandexecute     41 - finished
+2019-11-13 18:32 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:32 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandexecute     30 - Incommand == null
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandgetCourses    147 - started
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandgetCourses    164 - finished
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandexecute     44 - finished
+2019-11-13 18:32 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:32 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:32 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:32 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandexecute     27 - started
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandgetUpdateList     97 - started
+2019-11-13 18:32 [DEBUG]         GetCoursesCommandexecute     41 - finished
+2019-11-13 18:32 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:33 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@28009921]
+2019-11-13 18:55 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 18:55 [DEBUG]              LoginCommandexecute     23 - started
+2019-11-13 18:55 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@48a1e4c]
+2019-11-13 18:55 [DEBUG]              LoginCommandexecute     45 - finished
+2019-11-13 18:55 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:55 [DEBUG]         GetCoursesCommandexecute     28 - started
+2019-11-13 18:55 [DEBUG]         GetCoursesCommandexecute     31 - Incommand == null
+2019-11-13 18:55 [DEBUG]         GetCoursesCommandgetCourses    154 - started
+2019-11-13 18:55 [DEBUG]         GetCoursesCommandgetCourses    171 - finished
+2019-11-13 18:55 [DEBUG]         GetCoursesCommandexecute     45 - finished
+2019-11-13 18:55 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@48a1e4c]
+2019-11-13 18:55 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@48a1e4c]
+2019-11-13 18:55 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:55 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:55 [DEBUG]         GetCoursesCommandexecute     28 - started
+2019-11-13 18:55 [DEBUG]         GetCoursesCommandgetUpdateList     98 - started
+2019-11-13 18:55 [DEBUG]         GetCoursesCommandexecute     42 - finished
+2019-11-13 18:55 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:56 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandexecute     28 - started
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandexecute     31 - Incommand == null
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandgetCourses    154 - started
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandgetCourses    171 - finished
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandexecute     45 - finished
+2019-11-13 18:56 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@48a1e4c]
+2019-11-13 18:56 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@48a1e4c]
+2019-11-13 18:56 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:56 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandexecute     28 - started
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandgetUpdateList     98 - started
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandexecute     42 - finished
+2019-11-13 18:56 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:56 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandexecute     28 - started
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandexecute     31 - Incommand == null
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandgetCourses    154 - started
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandgetCourses    171 - finished
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandexecute     45 - finished
+2019-11-13 18:56 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@48a1e4c]
+2019-11-13 18:56 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@48a1e4c]
+2019-11-13 18:56 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:56 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandexecute     28 - started
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandgetUpdateList     98 - started
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandgetUpdateList    111 - finished
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandexecute     42 - finished
+2019-11-13 18:56 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:56 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandexecute     28 - started
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandupdateCourse    125 - started
+2019-11-13 18:56 [TRACE]         GetCoursesCommandupdateCourse    133 - error on wrong date format enter
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandexecute     42 - finished
+2019-11-13 18:56 [DEBUG]                ControllerdoPost     60 - doPost forward
+2019-11-13 18:56 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandexecute     28 - started
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandexecute     31 - Incommand == null
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandgetCourses    154 - started
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandgetCourses    171 - finished
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandexecute     45 - finished
+2019-11-13 18:56 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@48a1e4c]
+2019-11-13 18:56 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@48a1e4c]
+2019-11-13 18:56 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:56 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandexecute     28 - started
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandgetUpdateList     98 - started
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandgetUpdateList    111 - finished
+2019-11-13 18:56 [DEBUG]         GetCoursesCommandexecute     42 - finished
+2019-11-13 18:56 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:57 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 18:57 [DEBUG]         GetCoursesCommandexecute     28 - started
+2019-11-13 18:57 [DEBUG]         GetCoursesCommandupdateCourse    125 - started
+2019-11-13 18:57 [TRACE]         GetCoursesCommandupdateCourse    133 - error on wrong date format enter
+2019-11-13 18:57 [DEBUG]         GetCoursesCommandexecute     42 - finished
+2019-11-13 18:57 [DEBUG]                ControllerdoPost     60 - doPost forward
+2019-11-13 18:58 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@48a1e4c]
+2019-11-13 18:58 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 18:58 [DEBUG]              LoginCommandexecute     23 - started
+2019-11-13 18:58 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:58 [DEBUG]              LoginCommandexecute     45 - finished
+2019-11-13 18:58 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandexecute     28 - started
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandexecute     31 - Incommand == null
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandgetCourses    155 - started
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandgetCourses    172 - finished
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandexecute     45 - finished
+2019-11-13 18:58 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:58 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:58 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:58 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandexecute     28 - started
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandgetUpdateList     98 - started
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandgetUpdateList    111 - finished
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandexecute     42 - finished
+2019-11-13 18:58 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:58 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandexecute     28 - started
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandupdateCourse    125 - started
+2019-11-13 18:58 [TRACE]                 DBManagerupdateCourse    338 - Course with id: 1 Programming 2018-10-17 2019-04-25 of teacher(login)null has been updated
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandupdateCourse    150 - finished
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandexecute     42 - finished
+2019-11-13 18:58 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandexecute     28 - started
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandexecute     31 - Incommand == null
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandgetCourses    155 - started
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandgetCourses    172 - finished
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandexecute     45 - finished
+2019-11-13 18:58 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:58 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:58 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:58 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandexecute     28 - started
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandexecute     31 - Incommand == null
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandgetCourses    155 - started
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandgetCourses    172 - finished
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandexecute     45 - finished
+2019-11-13 18:58 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:58 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:58 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:58 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandexecute     28 - started
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandgetUpdateList     98 - started
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandgetUpdateList    111 - finished
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandexecute     42 - finished
+2019-11-13 18:58 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:58 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandexecute     28 - started
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandupdateCourse    125 - started
+2019-11-13 18:58 [TRACE]                 DBManagerupdateCourse    338 - Course with id: 1 Programming 2018-10-17 2019-04-26 of teacher(login)null has been updated
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandupdateCourse    150 - finished
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandexecute     42 - finished
+2019-11-13 18:58 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandexecute     28 - started
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandexecute     31 - Incommand == null
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandgetCourses    155 - started
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandgetCourses    172 - finished
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandexecute     45 - finished
+2019-11-13 18:58 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:58 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:58 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:58 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:58 [DEBUG]           GetUsersCommandexecute     26 - GetUsersCommand started
+2019-11-13 18:58 [DEBUG]           GetUsersCommandgetUsers    105 - started
+2019-11-13 18:58 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added usersList javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:58 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added requestsList javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:58 [DEBUG]           GetUsersCommandgetUsers    118 - finished
+2019-11-13 18:58 [DEBUG]           GetUsersCommandexecute     29 - incommand == null. Finished
+2019-11-13 18:58 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:58 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:58 [DEBUG]           LanguageCommandexecute     20 - started
+2019-11-13 18:58 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added language javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:58 [TRACE]           LanguageCommandexecute     27 - Session language has been changed to english
+2019-11-13 18:58 [DEBUG]           LanguageCommandexecute     35 - finished
+2019-11-13 18:58 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:58 [DEBUG]           GetUsersCommandexecute     26 - GetUsersCommand started
+2019-11-13 18:58 [DEBUG]           GetUsersCommandgetUsers    105 - started
+2019-11-13 18:58 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced usersList javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:58 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced requestsList javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:58 [DEBUG]           GetUsersCommandgetUsers    118 - finished
+2019-11-13 18:58 [DEBUG]           GetUsersCommandexecute     29 - incommand == null. Finished
+2019-11-13 18:58 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:58 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandexecute     28 - started
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandexecute     31 - Incommand == null
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandgetCourses    155 - started
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandgetCourses    172 - finished
+2019-11-13 18:58 [DEBUG]         GetCoursesCommandexecute     45 - finished
+2019-11-13 18:58 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:58 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:58 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:58 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:58 [DEBUG]     SortingCoursesCommandexecute     32 - started
+2019-11-13 18:58 [DEBUG]     SortingCoursesCommandsortByTerms    296 - started
+2019-11-13 18:58 [DEBUG]     SortingCoursesCommandsortByTerms    320 - finished
+2019-11-13 18:58 [DEBUG]     SortingCoursesCommandexecute     44 - finished
+2019-11-13 18:58 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:58 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:58 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:58 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 18:58 [DEBUG]     SortingCoursesCommandexecute     32 - started
+2019-11-13 18:58 [DEBUG]     SortingCoursesCommandsortPopulars    228 - started
+2019-11-13 18:58 [DEBUG]     SortingCoursesCommandsortPopulars    250 - finished
+2019-11-13 18:58 [DEBUG]     SortingCoursesCommandexecute     44 - finished
+2019-11-13 18:58 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:58 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:58 [DEBUG]                ControllerdoPost     60 - doPost forward
+2019-11-13 18:59 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 18:59 [DEBUG]     SortingCoursesCommandexecute     32 - started
+2019-11-13 18:59 [DEBUG]     SortingCoursesCommandsortPopulars    228 - started
+2019-11-13 18:59 [DEBUG]     SortingCoursesCommandsortPopulars    250 - finished
+2019-11-13 18:59 [DEBUG]     SortingCoursesCommandexecute     44 - finished
+2019-11-13 18:59 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:59 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:59 [DEBUG]                ControllerdoPost     60 - doPost forward
+2019-11-13 18:59 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 18:59 [DEBUG]     SortingCoursesCommandexecute     32 - started
+2019-11-13 18:59 [DEBUG]     SortingCoursesCommandsortPopulars    228 - started
+2019-11-13 18:59 [DEBUG]     SortingCoursesCommandsortPopulars    250 - finished
+2019-11-13 18:59 [DEBUG]     SortingCoursesCommandexecute     44 - finished
+2019-11-13 18:59 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:59 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:59 [DEBUG]                ControllerdoPost     60 - doPost forward
+2019-11-13 18:59 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 18:59 [DEBUG]     SortingCoursesCommandexecute     32 - started
+2019-11-13 18:59 [DEBUG]     SortingCoursesCommandsortPopulars    228 - started
+2019-11-13 18:59 [DEBUG]     SortingCoursesCommandsortPopulars    250 - finished
+2019-11-13 18:59 [DEBUG]     SortingCoursesCommandexecute     44 - finished
+2019-11-13 18:59 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:59 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:59 [DEBUG]                ControllerdoPost     60 - doPost forward
+2019-11-13 18:59 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:59 [DEBUG]         GetCoursesCommandexecute     28 - started
+2019-11-13 18:59 [DEBUG]         GetCoursesCommandgetUpdateList     98 - started
+2019-11-13 18:59 [DEBUG]         GetCoursesCommandgetUpdateList    111 - finished
+2019-11-13 18:59 [DEBUG]         GetCoursesCommandexecute     42 - finished
+2019-11-13 18:59 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:59 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 18:59 [DEBUG]         GetCoursesCommandexecute     28 - started
+2019-11-13 18:59 [DEBUG]         GetCoursesCommandupdateCourse    125 - started
+2019-11-13 18:59 [TRACE]                 DBManagerupdateCourse    338 - Course with id: 1 Programming 2018-10-17 2019-04-25 of teacher(login)null has been updated
+2019-11-13 18:59 [DEBUG]         GetCoursesCommandupdateCourse    150 - finished
+2019-11-13 18:59 [DEBUG]         GetCoursesCommandexecute     42 - finished
+2019-11-13 18:59 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:59 [DEBUG]         GetCoursesCommandexecute     28 - started
+2019-11-13 18:59 [DEBUG]         GetCoursesCommandexecute     31 - Incommand == null
+2019-11-13 18:59 [DEBUG]         GetCoursesCommandgetCourses    155 - started
+2019-11-13 18:59 [DEBUG]         GetCoursesCommandgetCourses    172 - finished
+2019-11-13 18:59 [DEBUG]         GetCoursesCommandexecute     45 - finished
+2019-11-13 18:59 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:59 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:59 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 18:59 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:59 [DEBUG]             LogoutCommandexecute     22 - started
+2019-11-13 18:59 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed usersList javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:59 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed requestsList javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:59 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed language javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:59 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed list javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:59 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@14fa2d9e]
+2019-11-13 18:59 [DEBUG]             LogoutCommandexecute     29 - languade has been saved
+2019-11-13 18:59 [DEBUG]             LogoutCommandexecute     39 - finished
+2019-11-13 18:59 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 18:59 [DEBUG]              LoginCommandexecute     23 - started
+2019-11-13 18:59 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@400d9bf]
+2019-11-13 18:59 [DEBUG]              LoginCommandexecute     45 - finished
+2019-11-13 18:59 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 18:59 [DEBUG]            JournalCommandexecute     30 - started
+2019-11-13 18:59 [DEBUG]            JournalCommandgetCurrentCourses    130 - started
+2019-11-13 18:59 [DEBUG]            JournalCommandgetCurrentCourses    159 - finished
+2019-11-13 18:59 [DEBUG]            JournalCommandexecute     45 - finished
+2019-11-13 18:59 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:00 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:00 [DEBUG]            JournalCommandexecute     30 - started
+2019-11-13 19:00 [DEBUG]            JournalCommandgetCurrentCourses    130 - started
+2019-11-13 19:00 [DEBUG]            JournalCommandgetCurrentCourses    159 - finished
+2019-11-13 19:00 [DEBUG]            JournalCommandexecute     45 - finished
+2019-11-13 19:00 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:00 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:00 [DEBUG]            JournalCommandexecute     30 - started
+2019-11-13 19:00 [DEBUG]            JournalCommandgetCurrentCourses    130 - started
+2019-11-13 19:00 [DEBUG]            JournalCommandgetCurrentCourses    159 - finished
+2019-11-13 19:00 [DEBUG]            JournalCommandexecute     45 - finished
+2019-11-13 19:00 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:01 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:01 [DEBUG]            JournalCommandexecute     30 - started
+2019-11-13 19:01 [DEBUG]            JournalCommandgetCurrentCourses    130 - started
+2019-11-13 19:01 [DEBUG]            JournalCommandgetCurrentCourses    159 - finished
+2019-11-13 19:01 [DEBUG]            JournalCommandexecute     45 - finished
+2019-11-13 19:01 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:01 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:01 [DEBUG]            JournalCommandexecute     30 - started
+2019-11-13 19:01 [DEBUG]            JournalCommandgetCurrentCourses    130 - started
+2019-11-13 19:01 [DEBUG]            JournalCommandgetCurrentCourses    159 - finished
+2019-11-13 19:01 [DEBUG]            JournalCommandexecute     45 - finished
+2019-11-13 19:01 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:01 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:01 [DEBUG]            JournalCommandexecute     30 - started
+2019-11-13 19:01 [DEBUG]            JournalCommandgetCurrentCourses    130 - started
+2019-11-13 19:01 [DEBUG]            JournalCommandgetSortedCourses     54 - started
+2019-11-13 19:01 [DEBUG]            JournalCommandgetSortedCourses     84 - finished
+2019-11-13 19:01 [DEBUG]            JournalCommandgetCurrentCourses    159 - finished
+2019-11-13 19:01 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:01 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:01 [DEBUG]            JournalCommandexecute     30 - started
+2019-11-13 19:01 [DEBUG]            JournalCommandgetCurrentCourses    130 - started
+2019-11-13 19:01 [DEBUG]            JournalCommandgetSortedCourses     54 - started
+2019-11-13 19:01 [DEBUG]            JournalCommandgetSortedCourses     84 - finished
+2019-11-13 19:01 [DEBUG]            JournalCommandgetCurrentCourses    159 - finished
+2019-11-13 19:01 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:01 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:01 [DEBUG]            JournalCommandexecute     30 - started
+2019-11-13 19:01 [DEBUG]            JournalCommandgetCurrentCourses    130 - started
+2019-11-13 19:01 [DEBUG]            JournalCommandgetCurrentCourses    159 - finished
+2019-11-13 19:01 [DEBUG]            JournalCommandexecute     45 - finished
+2019-11-13 19:01 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:03 [DEBUG]            JournalCommandexecute     30 - started
+2019-11-13 19:03 [DEBUG]            JournalCommandgetCurrentCourses    130 - started
+2019-11-13 19:03 [DEBUG]            JournalCommandgetCurrentCourses    159 - finished
+2019-11-13 19:03 [DEBUG]            JournalCommandexecute     45 - finished
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added toMove javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@400d9bf]
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:03 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 19:03 [DEBUG]            JournalCommandexecute     30 - started
+2019-11-13 19:03 [DEBUG]            JournalCommandsetMark    164 - started
+2019-11-13 19:03 [DEBUG]                ControllerdoPost     60 - doPost forward
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:03 [DEBUG]            JournalCommandexecute     30 - started
+2019-11-13 19:03 [DEBUG]            JournalCommandgetCurrentCourses    130 - started
+2019-11-13 19:03 [DEBUG]            JournalCommandgetCurrentCourses    159 - finished
+2019-11-13 19:03 [DEBUG]            JournalCommandexecute     45 - finished
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced toMove javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@400d9bf]
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:03 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 19:03 [DEBUG]            JournalCommandexecute     30 - started
+2019-11-13 19:03 [DEBUG]            JournalCommandsetMark    164 - started
+2019-11-13 19:03 [TRACE]                 DBManagersetMark    208 - Student 3 got mark 4 for course(id) 1
+2019-11-13 19:03 [TRACE]                 DBManagersetMark    211 - Student 3 has been deleted from course(id) 1
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed toMove javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@400d9bf]
+2019-11-13 19:03 [DEBUG]            JournalCommandgetCurrentCourses    130 - started
+2019-11-13 19:03 [DEBUG]            JournalCommandgetCurrentCourses    159 - finished
+2019-11-13 19:03 [DEBUG]            JournalCommandsetMark    183 - finished
+2019-11-13 19:03 [DEBUG]                ControllerdoPost     60 - doPost forward
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:03 [DEBUG]             LogoutCommandexecute     22 - started
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@400d9bf]
+2019-11-13 19:03 [DEBUG]             LogoutCommandexecute     39 - finished
+2019-11-13 19:03 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 19:03 [DEBUG]              LoginCommandexecute     23 - started
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [DEBUG]              LoginCommandexecute     45 - finished
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandotherCourses     85 - started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandotherCourses    122 - finished
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added toMove javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:03 [DEBUG]           LanguageCommandexecute     20 - started
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added language javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [TRACE]           LanguageCommandexecute     27 - Session language has been changed to english
+2019-11-13 19:03 [DEBUG]           LanguageCommandexecute     35 - finished
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandotherCourses     85 - started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandotherCourses    122 - finished
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced toMove javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:03 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandapplyStudent     54 - started
+2019-11-13 19:03 [TRACE]                 DBManagerapplyStudent     38 -  Student with ID: 3 was applied to a subject: Algorithms of teacher: teacher22
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed toMove javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandpreparingCourses    181 - started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandpreparingCourses    201 - finished
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandapplyStudent     74 - finished
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [DEBUG]                ControllerdoPost     60 - doPost forward
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandpreparingCourses    181 - started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandpreparingCourses    201 - finished
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandprogressCourses    133 - started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandprogressCourses    170 - finished
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandpreparingCourses    181 - started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandpreparingCourses    201 - finished
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandfinishedCourses    212 - started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandfinishedCourses    241 - finished
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandotherCourses     85 - started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandotherCourses    122 - finished
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandpreparingCourses    181 - started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandpreparingCourses    201 - finished
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandfinishedCourses    212 - started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandfinishedCourses    241 - finished
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandpreparingCourses    181 - started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandpreparingCourses    201 - finished
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandfinishedCourses    212 - started
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandfinishedCourses    241 - finished
+2019-11-13 19:03 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:03 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:04 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:04 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:04 [DEBUG]     StudentCoursesCommandpreparingCourses    181 - started
+2019-11-13 19:04 [DEBUG]     StudentCoursesCommandpreparingCourses    201 - finished
+2019-11-13 19:04 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:04 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:04 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:04 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:04 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:04 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:04 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:04 [DEBUG]     StudentCoursesCommandfinishedCourses    212 - started
+2019-11-13 19:04 [DEBUG]     StudentCoursesCommandfinishedCourses    241 - finished
+2019-11-13 19:04 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:04 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:06 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:06 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:06 [DEBUG]     StudentCoursesCommandprogressCourses    133 - started
+2019-11-13 19:06 [DEBUG]     StudentCoursesCommandprogressCourses    170 - finished
+2019-11-13 19:06 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:06 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:06 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:06 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:06 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:06 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:06 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:06 [DEBUG]     StudentCoursesCommandpreparingCourses    181 - started
+2019-11-13 19:06 [DEBUG]     StudentCoursesCommandpreparingCourses    201 - finished
+2019-11-13 19:06 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:06 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:06 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:06 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:06 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:06 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:06 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:06 [DEBUG]     StudentCoursesCommandprogressCourses    133 - started
+2019-11-13 19:06 [DEBUG]     StudentCoursesCommandprogressCourses    170 - finished
+2019-11-13 19:06 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:06 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:06 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:06 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:06 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:06 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:06 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:06 [DEBUG]     StudentCoursesCommandfinishedCourses    212 - started
+2019-11-13 19:06 [DEBUG]     StudentCoursesCommandfinishedCourses    241 - finished
+2019-11-13 19:06 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:06 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:07 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:07 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:07 [DEBUG]     StudentCoursesCommandfinishedCourses    212 - started
+2019-11-13 19:07 [DEBUG]     StudentCoursesCommandfinishedCourses    241 - finished
+2019-11-13 19:07 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:07 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:07 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:07 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:07 [DEBUG]     StudentCoursesCommandotherCourses     85 - started
+2019-11-13 19:07 [DEBUG]     StudentCoursesCommandotherCourses    122 - finished
+2019-11-13 19:07 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:07 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:07 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:07 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandprogressCourses    133 - started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandprogressCourses    170 - finished
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandpreparingCourses    181 - started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandpreparingCourses    201 - finished
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandfinishedCourses    212 - started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandfinishedCourses    241 - finished
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:08 [DEBUG]             LogoutCommandexecute     22 - started
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed language javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@6fb49011]
+2019-11-13 19:08 [DEBUG]             LogoutCommandexecute     29 - languade has been saved
+2019-11-13 19:08 [DEBUG]             LogoutCommandexecute     39 - finished
+2019-11-13 19:08 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 19:08 [DEBUG]              LoginCommandexecute     23 - started
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@72cbeec4]
+2019-11-13 19:08 [DEBUG]              LoginCommandexecute     45 - finished
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:08 [DEBUG]             LogoutCommandexecute     22 - started
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@72cbeec4]
+2019-11-13 19:08 [DEBUG]             LogoutCommandexecute     39 - finished
+2019-11-13 19:08 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 19:08 [DEBUG]              LoginCommandexecute     23 - started
+2019-11-13 19:08 [DEBUG]              LoginCommandexecute     45 - finished
+2019-11-13 19:08 [DEBUG]                ControllerdoPost     60 - doPost forward
+2019-11-13 19:08 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 19:08 [DEBUG]              LoginCommandexecute     23 - started
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4184aed6]
+2019-11-13 19:08 [DEBUG]              LoginCommandexecute     45 - finished
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandpreparingCourses    181 - started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandpreparingCourses    201 - finished
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4184aed6]
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4184aed6]
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4184aed6]
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandprogressCourses    133 - started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandprogressCourses    170 - finished
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4184aed6]
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4184aed6]
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4184aed6]
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandfinishedCourses    212 - started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandfinishedCourses    241 - finished
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandotherCourses     85 - started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandotherCourses    122 - finished
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4184aed6]
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4184aed6]
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4184aed6]
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added toMove javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4184aed6]
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:08 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandapplyStudent     54 - started
+2019-11-13 19:08 [TRACE]                 DBManagerapplyStudent     38 -  Student with ID: 7 was applied to a subject: Algorithms of teacher: teacher22
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed toMove javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4184aed6]
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandpreparingCourses    181 - started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandpreparingCourses    201 - finished
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandapplyStudent     74 - finished
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4184aed6]
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4184aed6]
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4184aed6]
+2019-11-13 19:08 [DEBUG]                ControllerdoPost     60 - doPost forward
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandpreparingCourses    181 - started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandpreparingCourses    201 - finished
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4184aed6]
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4184aed6]
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4184aed6]
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandprogressCourses    133 - started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandprogressCourses    170 - finished
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4184aed6]
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4184aed6]
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4184aed6]
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandfinishedCourses    212 - started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandfinishedCourses    241 - finished
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandotherCourses     85 - started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandotherCourses    122 - finished
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4184aed6]
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4184aed6]
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandfinishedCourses    212 - started
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandfinishedCourses    241 - finished
+2019-11-13 19:08 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:08 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:08 [DEBUG]             LogoutCommandexecute     22 - started
+2019-11-13 19:08 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@4184aed6]
+2019-11-13 19:08 [DEBUG]             LogoutCommandexecute     39 - finished
+2019-11-13 19:09 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 19:09 [DEBUG]              LoginCommandexecute     23 - started
+2019-11-13 19:09 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@600297cf]
+2019-11-13 19:09 [DEBUG]              LoginCommandexecute     45 - finished
+2019-11-13 19:09 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:09 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:09 [DEBUG]     StudentCoursesCommandpreparingCourses    181 - started
+2019-11-13 19:09 [DEBUG]     StudentCoursesCommandpreparingCourses    201 - finished
+2019-11-13 19:09 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:09 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@600297cf]
+2019-11-13 19:09 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@600297cf]
+2019-11-13 19:09 [TRACE]       SessionListenerImplattributeReplaced     33 - Attribute replaced courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@600297cf]
+2019-11-13 19:09 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:09 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:09 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:09 [DEBUG]     StudentCoursesCommandprogressCourses    133 - started
+2019-11-13 19:09 [DEBUG]     StudentCoursesCommandprogressCourses    170 - finished
+2019-11-13 19:09 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:09 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed subjects javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@600297cf]
+2019-11-13 19:09 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed courses javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@600297cf]
+2019-11-13 19:09 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:09 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:09 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:09 [DEBUG]     StudentCoursesCommandfinishedCourses    212 - started
+2019-11-13 19:09 [DEBUG]     StudentCoursesCommandfinishedCourses    241 - finished
+2019-11-13 19:09 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:09 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:09 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:09 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:09 [DEBUG]     StudentCoursesCommandotherCourses     85 - started
+2019-11-13 19:09 [DEBUG]     StudentCoursesCommandotherCourses    122 - finished
+2019-11-13 19:09 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:09 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:09 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:09 [DEBUG]     StudentCoursesCommandexecute     33 - started
+2019-11-13 19:09 [DEBUG]     StudentCoursesCommandfinishedCourses    212 - started
+2019-11-13 19:09 [DEBUG]     StudentCoursesCommandfinishedCourses    241 - finished
+2019-11-13 19:09 [DEBUG]     StudentCoursesCommandexecute     43 - finished
+2019-11-13 19:09 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:09 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:09 [DEBUG]             LogoutCommandexecute     22 - started
+2019-11-13 19:09 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@600297cf]
+2019-11-13 19:09 [DEBUG]             LogoutCommandexecute     39 - finished
+2019-11-13 19:09 [DEBUG]                ControllerdoPost     50 - doPost of controller started
+2019-11-13 19:09 [DEBUG]              LoginCommandexecute     23 - started
+2019-11-13 19:09 [TRACE]       SessionListenerImplattributeAdded     25 - Attribute added user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@2889b842]
+2019-11-13 19:09 [DEBUG]              LoginCommandexecute     45 - finished
+2019-11-13 19:09 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:09 [DEBUG]            JournalCommandexecute     30 - started
+2019-11-13 19:09 [DEBUG]            JournalCommandgetCurrentCourses    130 - started
+2019-11-13 19:09 [DEBUG]            JournalCommandgetCurrentCourses    159 - finished
+2019-11-13 19:09 [DEBUG]            JournalCommandexecute     45 - finished
+2019-11-13 19:09 [DEBUG]                ControllerdoGet     44 - doGet forward
+2019-11-13 19:11 [DEBUG]                ControllerdoGet     34 - doGet of controller started
+2019-11-13 19:11 [DEBUG]             LogoutCommandexecute     22 - started
+2019-11-13 19:11 [TRACE]       SessionListenerImplattributeRemoved     29 - Attribute removed user javax.servlet.http.HttpSessionBindingEvent[source=org.apache.catalina.session.StandardSessionFacade@2889b842]
+2019-11-13 19:11 [DEBUG]             LogoutCommandexecute     39 - finished
