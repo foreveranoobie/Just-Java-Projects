@@ -1,0 +1,24 @@
+#ignoring .class files
+**/*.class
+
+#ignoring .iml files
+**/*.iml
+
+#ignoring .idea
+**/.idea/
+
+#ignoring out
+**/out/
+
+#ignoring target
+**/target/
+
+#ser ignoring
+**/*.ser
+
+#zip ang gzip ignoring
+**/*.zip
+
+ConsoleShopApp/*.gzip
+
+**/logs/
