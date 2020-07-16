@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location">
+            <value>classpath:auditoriums.properties</value>
+        </property>
+    </bean>
+
+    <import resource="classpath:dates.xml"/>
+
+    <util:map id="firstEventMap" map-class="java.util.HashMap" key-type="java.util.Date"
+              value-type="com.epam.storozhuk.domain.Auditorium">
+        <entry key-ref="firstDate" value-ref="firstAuditorium"/>
+        <entry key-ref="thirdDate" value-ref="secondAuditorium"/>
+        <entry key-ref="fifthDate" value-ref="thirdAuditorium"/>
+    </util:map>
+    <util:map id="secondEventMap" map-class="java.util.HashMap" key-type="java.util.Date"
+              value-type="com.epam.storozhuk.domain.Auditorium">
+        <entry key-ref="firstDate" value-ref="secondAuditorium"/>
+        <entry key-ref="secondDate" value-ref="thirdAuditorium"/>
+    </util:map>
+
+    <bean class="com.epam.storozhuk.domain.Auditorium" id="firstAuditorium" c:number="${first.number}"
+          c:seatsCount="${first.seatsCount}"
+          c:vipSeatsCount="${first.vipSeatsCount}"/>
+    <bean class="com.epam.storozhuk.domain.Auditorium" id="secondAuditorium" c:number="${second.number}"
+          c:seatsCount="${second.seatsCount}"
+          c:vipSeatsCount="${second.vipSeatsCount}"/>
+    <bean class="com.epam.storozhuk.domain.Auditorium" id="thirdAuditorium" c:number="${third.number}"
+          c:seatsCount="${third.seatsCount}"
+          c:vipSeatsCount="${third.vipSeatsCount}"/>
+</beans>
