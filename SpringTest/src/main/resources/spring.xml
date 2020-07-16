@@ -1,0 +1,54 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+ 		http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location">
+            <value>classpath:client.properties</value>
+        </property>
+    </bean>
+
+    <import resource="loggers.xml"/>
+
+    <bean id="client" class="com.epam.storozhuk.beans.Client">
+        <constructor-arg value="${id}"/>
+        <constructor-arg value="${fullName}"/>
+        <constructor-arg value="${greeting}"/>
+    </bean>
+
+    <bean id="dateFormat" class="java.text.SimpleDateFormat">
+        <constructor-arg value="YYYY-MM-DD hh:mm:ss"/>
+    </bean>
+
+    <bean id="event" class="com.epam.storozhuk.events.Event" scope="prototype">
+        <constructor-arg>
+            <bean class="java.util.Date"/>
+        </constructor-arg>
+        <constructor-arg ref="dateFormat"/>
+    </bean>
+
+    <util:map id="loggerMap">
+        <entry key="${info}" value-ref="eventLogger"/>
+        <entry key="${error}" value-ref="combinedEventLogger"/>
+    </util:map>
+
+    <bean id="app" class="com.epam.storozhuk.App" p:event-ref="event" c:client-ref="client"
+          c:defaultLogger-ref="cachedFileEventLogger" c:loggers-ref="loggerMap">
+        <!--<constructor-arg ref="client"/>
+        <constructor-arg ref="cachedFileEventLogger"/>
+        <constructor-arg>
+            <map>
+                <entry key="${info}" value-ref="eventLogger"/>
+                <entry key="${error}" value-ref="combinedEventLogger"/>
+            </map>
+        </constructor-arg>-->
+    </bean>
+</beans>
