@@ -3,6 +3,7 @@ package com.epam.storozhuk.loggers;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import javax.annotation.PreDestroy;
 import com.epam.storozhuk.events.Event;
 
 public class CachedFileEventLogger extends FileEventLogger {
@@ -28,6 +29,7 @@ public class CachedFileEventLogger extends FileEventLogger {
         }
     }
 
+    @PreDestroy
     public void onCacheDestroy() throws IOException {
         System.out.println("Destroying CachedFileEventLogger");
         if (!cache.isEmpty()) {

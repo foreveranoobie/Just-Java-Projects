@@ -2,6 +2,7 @@ package com.epam.storozhuk.loggers;
 
 import java.io.File;
 import java.io.IOException;
+import javax.annotation.PostConstruct;
 import org.apache.commons.io.FileUtils;
 import com.epam.storozhuk.events.Event;
 
@@ -13,6 +14,7 @@ public class FileEventLogger implements EventLogger {
         this.filename = filename;
     }
 
+    @PostConstruct
     public void init() {
         file = new File(filename);
     }
