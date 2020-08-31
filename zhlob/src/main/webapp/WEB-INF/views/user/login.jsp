@@ -10,7 +10,7 @@
   <% response.sendRedirect("/"); %>
 </sec:authorize>
 <div>
-  <form:form method="POST" action="${loginUrl}">
+  <form:form method="POST" action="/login">
     <h2>Вход в систему</h2>
     <div>
       <input name="username" type="text" placeholder="Username"

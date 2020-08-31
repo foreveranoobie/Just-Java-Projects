@@ -7,6 +7,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Repository
@@ -32,6 +33,7 @@ public class ArticleRepositoryImpl implements ArticleRepository {
     public Article saveArticle(Article article) {
         Session session = sessionFactory.openSession();
         session.save(article);
+        session.flush();
         session.close();
         return article;
     }

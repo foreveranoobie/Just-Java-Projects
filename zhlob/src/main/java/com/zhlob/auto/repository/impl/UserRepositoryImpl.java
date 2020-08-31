@@ -6,20 +6,21 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-
-import javax.transaction.Transactional;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 @Repository
+@Transactional(propagation = Propagation.REQUIRES_NEW)
 public class UserRepositoryImpl implements UserRepository {
     @Autowired
     private SessionFactory sessionFactory;
     private final String getUserQuery = "FROM User where login=:login";
 
     @Override
-    @Transactional
     public boolean registerUser(User user) {
         Session session = sessionFactory.openSession();
         Long result = (Long) session.save(user);
+        session.flush();
         session.close();
         return result > 0;
     }

@@ -26,7 +26,7 @@ public class AuthorizationController {
                                @ModelAttribute User user) {
         Captcha captcha = Captcha.load(request, "captchaDescriptor");
         boolean isHuman = captcha.validate(captchaDescriptor.getCaptchaCode());
-        if (userService.saveUser(user)) {
+        if (isHuman && userService.saveUser(user)) {
             captchaDescriptor = null;
             return "redirect:/home";
         } else {
