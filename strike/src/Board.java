@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -11,9 +12,12 @@ public class Board extends JPanel implements Runnable {
     private Thread board;
     private Object monitor;
     private CopyOnWriteArrayList<Enemy> enemies;
+    private boolean hasLost = false;
+    private int enemiesCount = 1;
 
     public Board() {
         initBoard();
+        //SoundUtil.initSound();
     }
 
     private void initBoard() {
@@ -23,7 +27,7 @@ public class Board extends JPanel implements Runnable {
         monitor = new Object();
         player = new Player(-1, 607, -1, 1031, monitor);
         enemies = new CopyOnWriteArrayList<>();
-        enemies.add(new Enemy(1000, 0));
+        enemies.add(new Enemy(1000, 0, 1));
         Enemy.setLowerBorder(610);
         Enemy.setUpperBorder(0);
     }
@@ -33,15 +37,30 @@ public class Board extends JPanel implements Runnable {
         super.paintComponent(g);
         doDrawing(g);
         Toolkit.getDefaultToolkit().sync();
+        if (hasLost) {
+            try {
+                System.in.read();
+                System.exit(0);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     private void doDrawing(Graphics g) {
         Graphics2D g2d = (Graphics2D) g;
+        if (hasLost) {
+            board.interrupt();
+            g2d.drawString("You lost! Press enter to exit", 300, 300);
+            return;
+        }
         g2d.drawImage(player.getImage(), player.getX(),
                 player.getY(), this);
-        for (Enemy enemy : enemies) {
-            g2d.drawImage(enemy.getImage(), enemy.getX(), enemy.getY(), this);
-            enemy.setVisible(true);
+        synchronized (enemies) {
+            for (Enemy enemy : enemies) {
+                g2d.drawImage(enemy.getImage(), enemy.getX(), enemy.getY(), this);
+                enemy.setVisible(true);
+            }
         }
         List<Bullet> bullets = player.getBullets();
         synchronized (bullets) {
@@ -50,27 +69,27 @@ public class Board extends JPanel implements Runnable {
             }
         }
         g2d.drawString("Enemies killed: " + player.getKills(), 400, 10);
+        g2d.drawString("| Magazine: " + player.getShots(), 600, 10);
     }
 
     public void addNotify() {
         super.addNotify();
         board = new Thread(this);
-        board.setDaemon(true);
         board.start();
     }
 
     @Override
     public void run() {
-        while (true) {
-            step();
-            updateBullets();
-            enemyMove();
-            repaint();
-            try {
+        try {
+            while (true) {
+                step();
+                updateBullets();
+                enemyMove();
+                repaint();
                 Thread.sleep(40);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
             }
+        } catch (InterruptedException e) {
+            return;
         }
     }
 
@@ -86,13 +105,11 @@ public class Board extends JPanel implements Runnable {
             int bulletX;
             int bulletWidth;
             int bulletY;
-            int bulletHeight;
             bullet:
             for (Bullet bullet : playerBullets) {
                 if (bullet.isVisible()) {
                     bulletX = bullet.getX();
                     bulletY = bullet.getY();
-                    bulletHeight = bullet.getHeight();
                     bulletWidth = bullet.getWidth();
                     Iterator<Enemy> iterator = enemies.iterator();
                     Enemy enemy;
@@ -101,13 +118,15 @@ public class Board extends JPanel implements Runnable {
                         if (((bulletX + bulletWidth >= enemy.getX()) &&
                                 (bulletX + bulletWidth <= enemy.getX() + enemy.getWidth())) &&
                                 ((bulletY <= enemy.getY() + enemy.getHeight()) && bulletY >= enemy.getY())) {
-                            enemy.setVisible(false);
-                            enemies.remove(enemy);
-                            enemy = null;
+                            enemy.shoot();
+                            if (!enemy.isVisible()) {
+                                enemies.remove(enemy);
+                                enemy = null;
+                                player.enemyKilled();
+                            }
                             playerBullets.remove(bullet);
                             bullet.setVisible(false);
                             bullet = null;
-                            player.enemyKilled();
                             continue bullet;
                         }
                     }
@@ -121,9 +140,30 @@ public class Board extends JPanel implements Runnable {
 
     private void enemyMove() {
         if (enemies.isEmpty()) {
-            enemies.add(new Enemy(1000, 0));
+            if (player.getKills() % 5 == 0) {
+                Enemy.incrementSpeed();
+                Enemy.increaseMaxHealth();
+                System.out.println("Max health increased to " + Enemy.getMaxHealth());
+            }
+            if (player.getKills() % 7 == 0) {
+                Enemy.increaseDx();
+                enemiesCount++;
+            }
+            synchronized (enemies) {
+                for (int num = 0; num < enemiesCount; num++) {
+                    if (num % 2 == 0) {
+                        enemies.add(new Enemy(1000, num * 90, 1));
+                    } else {
+                        enemies.add(new Enemy(1000, num * 90, -1));
+                    }
+                }
+            }
         } else {
             for (Enemy enemy : enemies) {
+                if (enemy.isCrossed()) {
+                    hasLost = true;
+                    return;
+                }
                 enemy.move();
             }
         }

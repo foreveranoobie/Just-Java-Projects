@@ -22,6 +22,9 @@ public class Player {
     private List<Bullet> bullets;
     private Object monitor;
     private int kills;
+    private int shots = 0;
+    private long millis = 0;
+    private boolean isReloading = false;
 
     public Player(int windowUpperBorder, int windowBottomBorder, int windowLeftBorder, int windowRightBorder,
                   Object monitor) {
@@ -62,7 +65,17 @@ public class Player {
             dy = 2;
         }
         if (key == KeyEvent.VK_SPACE) {
-            fire();
+            if (shots == 30) {
+                shots = 0;
+                isReloading = true;
+                millis = System.currentTimeMillis();
+            }
+            if (isReloading && System.currentTimeMillis() - millis > 1000) {
+                isReloading = false;
+            }
+            if (!isReloading) {
+                fire();
+            }
         }
     }
 
@@ -84,8 +97,10 @@ public class Player {
 
     private void fire() {
         synchronized (bullets) {
+            shots++;
             bullets.add(new Bullet(x + w, y + h / 6));
         }
+        //SoundUtil.playSound();
     }
 
     public void move() {
@@ -147,5 +162,9 @@ public class Player {
 
     public int getKills() {
         return kills;
+    }
+
+    public int getShots() {
+        return 30 - shots;
     }
 }
