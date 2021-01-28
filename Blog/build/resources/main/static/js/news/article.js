@@ -1,4 +1,5 @@
 var tags = new Map();
+var previewCloseButton;
 
 window.onload = function() {
     this.tags.set("header", "<header>Text</header>");
@@ -11,6 +12,35 @@ window.onload = function() {
       this.style.height = 'auto';
       this.style.height = (this.scrollHeight) + 'px';
     });
+   previewCloseButton = document.createElement("p");
+   previewCloseButton.innerHTML = "X";
+   previewCloseButton.style.display = "none";
+   previewCloseButton.style.marginLeft = "80%";
+   previewCloseButton.addEventListener("click", closePreview);
+}
+
+function previewArticle(){
+  alert($('#text').text());
+  $.post("/article/previewArticle",
+  {
+    articleName: $('textarea[name ="articleName"]').val(),
+    articleText: $('#text').text()
+  },
+  function(data, status){
+  var previewBody = $("#previewFrame").contents().find("body");
+  previewBody.text("");
+  previewCloseButton.style.display = "";
+  previewBody.append(previewCloseButton);
+  previewBody.append(data);
+    $("#previewFrame").show();
+  });
+}
+
+function closePreview(){
+    previewCloseButton.style.display = "none";
+    $("#previewFrame").contents().find("head").text("");
+    $("#previewFrame").contents().find("body").text("");
+    $("#previewFrame").hide();
 }
 
 function submitArticle(){
@@ -75,7 +105,7 @@ window.addEventListener("paste", function(e){
             img.src = URLObj.createObjectURL(imageBlob);
 
             var textDiv = $('#text');
-            textDiv.text(textDiv.text()+"<img src='" + img.src + "'/>");
+            textDiv.text(textDiv.text()+"<img>" + img.src + "<img/>");
             e.preventDefault();
             }
         }

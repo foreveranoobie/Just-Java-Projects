@@ -1,11 +1,9 @@
 package com.storozhuk.blog.controller;
 
+import com.storozhuk.blog.formatter.ChainArticleFormatter;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("/article")
@@ -20,5 +18,14 @@ public class ArticleController {
     public String saveArticle(@RequestParam String articleName, @RequestParam String articleText) {
         System.out.println(articleName + "\n" + articleText);
         return null;
+    }
+
+    @PostMapping("/previewArticle")
+    @ResponseBody
+    public String previewArticle(@RequestParam String articleName, @RequestParam String articleText,
+                                 @Autowired ChainArticleFormatter articleFormatter) {
+        articleFormatter.doChain(articleText);
+        articleName = "<h1>" + articleName + "</h1>";
+        return articleName + articleText;
     }
 }
