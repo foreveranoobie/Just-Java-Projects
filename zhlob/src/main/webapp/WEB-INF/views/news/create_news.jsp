@@ -8,8 +8,8 @@
 <body>
 <s:url value="/resources/js/jquery/jquery_3.4.1.js" var="jquery"/>
 <s:url value="/resources/js/news/article.js" var="article"/>
-<script src=${jquery}></script>
-<script src=${article}></script>
+<script src="/resources/js/jquery/jquery_3.4.1.js"></script>
+<script src="/resources/js/news/article.js" ></script>
 <form name="article" action="/article/sendArticle" method="post">
     <div>
         Название статьи
