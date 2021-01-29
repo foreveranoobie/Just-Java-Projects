@@ -1,30 +1,42 @@
 var tags = new Map();
 var previewCloseButton;
+var clipboardImageCount = 0;
 
 window.onload = function() {
     this.tags.set("header", "<header>Text</header>");
     this.tags.set("video", "<video>url</video>");
     this.tags.set("image", "<img>url</img>");
     $('#text').each(function () {
-      this.style.height = this.scrollHeight;
+      this.style.height = '400px';
+      this.style.minHeight = '400px';
       this.style.overflowY = 'hidden';
     }).on('input', function () {
-      this.style.height = 'auto';
-      this.style.height = (this.scrollHeight) + 'px';
+      /*if(this.scrollHeight > 400){
+        this.style.height = 'auto';
+        this.style.height = this.scrollHeight + 'px';
+      }*/
+      correctDivHeight(this);
     });
    previewCloseButton = document.createElement("p");
    previewCloseButton.innerHTML = "X";
    previewCloseButton.style.display = "none";
-   previewCloseButton.style.marginLeft = "80%";
+   previewCloseButton.style.marginLeft = "90%";
    previewCloseButton.addEventListener("click", closePreview);
 }
 
+function correctDivHeight(divElement){
+  if(divElement.scrollHeight > 400){
+    divElement.style.height = 'auto';
+    divElement.style.height = divElement.scrollHeight + 'px';
+  }
+}
+
 function previewArticle(){
-  alert($('#text').text());
+  alert($('#text').val());
   $.post("/article/previewArticle",
   {
     articleName: $('textarea[name ="articleName"]').val(),
-    articleText: $('#text').text()
+    articleText: $('#text').val()
   },
   function(data, status){
   var previewBody = $("#previewFrame").contents().find("body");
@@ -34,13 +46,14 @@ function previewArticle(){
   previewBody.append(data);
     $("#previewFrame").show();
   });
+  $('body').css('background-color', 'gray');
 }
 
 function closePreview(){
     previewCloseButton.style.display = "none";
-    $("#previewFrame").contents().find("head").text("");
     $("#previewFrame").contents().find("body").text("");
     $("#previewFrame").hide();
+    $('body').css('background-color', 'white');
 }
 
 function submitArticle(){
@@ -57,7 +70,18 @@ function submitArticle(){
 
 function insertTag(element){
   var textDiv = $('#text');
-  textDiv.text(textDiv.text()+tags.get(element.name));
+  var cursorPosition = textDiv.prop('selectionStart');
+  var additionalSymbol = "";
+  if(textDiv.val() != ""){
+    additionalSymbol = "\n";
+  }
+  var newTextVal = textDiv.val();
+  if(cursorPosition === 0){
+    newTextVal = newTextVal.insert(cursorPosition, tags.get(element.name) + "\n");
+  } else {
+    newTextVal = newTextVal.insert(cursorPosition, "\n" + tags.get(element.name));
+  }
+  textDiv.val(newTextVal);
 }
 
 function retrieveImageFromClipboardAsBlob(pasteEvent, callback){
@@ -103,11 +127,42 @@ window.addEventListener("paste", function(e){
             // Creates a DOMString containing a URL representing the object given in the parameter
             // namely the original Blob
             img.src = URLObj.createObjectURL(imageBlob);
-
             var textDiv = $('#text');
-            textDiv.text(textDiv.text()+"<img>" + img.src + "<img/>");
+            var cursorPosition = textDiv.prop('selectionStart');
+            var additionalSymbol = "";
+            if(textDiv.val() != ""){
+              additionalSymbol = "\n";
+            }
+            var newTextVal = textDiv.val();
+            var image = imageBlob;
+            var fd = new FormData();
+            fd.append('image', image);
+            fd.append('number', clipboardImageCount++);
+                $.ajax({
+                    url: '/article/saveImage',
+                    type: 'POST',
+                    data: fd,
+                    cache: false,
+                    processData: false,
+                    contentType: false,
+                    success: function(data){
+                      if(cursorPosition === 0){
+                        newTextVal = newTextVal.insert(cursorPosition, "<img>" + data + "</img>" + "\n");
+                      } else {
+                        newTextVal = newTextVal.insert(cursorPosition, "\n" + "<img>" + data + "</img>");
+                      }
+                      textDiv.val(newTextVal);
+                      }
+                });
             e.preventDefault();
             }
         }
     });
 }, false);
+
+String.prototype.insert = function(index, string) {
+  if (index > 0) {
+    return this.substring(0, index) + string + this.substr(index);
+  }
+  return string + this;
+};
