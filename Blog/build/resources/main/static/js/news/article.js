@@ -42,6 +42,7 @@ function previewArticle(){
   var previewBody = $("#previewFrame").contents().find("body");
   previewBody.text("");
   previewCloseButton.style.display = "";
+  //$("#previewFrame").attr("srcdoc", data);
   previewBody.append(previewCloseButton);
   previewBody.append(data);
     $("#previewFrame").show();

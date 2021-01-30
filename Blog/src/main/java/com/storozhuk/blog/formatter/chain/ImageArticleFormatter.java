@@ -17,7 +17,7 @@ public class ImageArticleFormatter extends ArticleFormatter {
             group = matcher.group();
             currentUrl = new StringBuilder(group.substring(5, group.length() - 6));
             if (currentUrl.toString().startsWith("image_")) {
-                src = "src='/article/getPreviewUploadedImage?imageName=" + currentUrl + "'";
+                src = "src='/articles/template/" + currentUrl + "'";
             } else {
                 src = "src='" + currentUrl + "'";
             }

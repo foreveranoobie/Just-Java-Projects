@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -66,5 +67,14 @@ public class ArticleController {
                 .status(HttpStatus.OK)
                 .contentLength(inputStream.contentLength())
                 .body(inputStream);
+    }
+
+    @PostMapping(value = "test")
+    public String doTest(Model model, @RequestParam String articleName, @RequestParam String articleText,
+                         @Autowired ChainArticleFormatter articleFormatter) {
+        articleText = articleFormatter.doChain(articleText);
+        model.addAttribute("code",
+                articleText);
+        return "article/test";
     }
 }
