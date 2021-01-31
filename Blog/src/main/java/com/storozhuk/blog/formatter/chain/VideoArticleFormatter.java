@@ -20,7 +20,7 @@ public class VideoArticleFormatter extends ArticleFormatter {
             if (youtubeIndex != -1) {
                 currentUrl = currentUrl.replace(youtubeIndex + 1, youtubeIndex + 9, "embed/");
             }
-            input = input.replace(matcher.group(), "<br/><iframe style='width: 30%; height: 35%;' src='" + currentUrl +
+            input = input.replace(matcher.group(), "<br/><iframe style='display: block; margin: 1% auto 2% auto; width: 43%; height: 51%;' src='" + currentUrl +
                     "'>" + "</iframe><br/>");
         }
         return (next != null ? next.formatInput(input) : input);

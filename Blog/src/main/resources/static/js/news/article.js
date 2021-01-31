@@ -20,7 +20,7 @@ window.onload = function() {
    previewCloseButton = document.createElement("p");
    previewCloseButton.innerHTML = "X";
    previewCloseButton.style.display = "none";
-   previewCloseButton.style.marginLeft = "90%";
+   previewCloseButton.style.marginLeft = "95%";
    previewCloseButton.addEventListener("click", closePreview);
 }
 

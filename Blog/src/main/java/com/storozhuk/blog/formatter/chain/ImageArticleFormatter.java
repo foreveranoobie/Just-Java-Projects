@@ -22,7 +22,7 @@ public class ImageArticleFormatter extends ArticleFormatter {
                 src = "src='" + currentUrl + "'";
             }
             input = input.replace(matcher.group(),
-                    "<br/><img style='max-width:30%; max-height:30%;' " + src + "/></br>");
+                    "<br/><img style='display: block; margin: 1% auto 2% auto; max-width:50%; max-height:50%;' " + src + "/></br>");
         }
         return (next != null ? next.formatInput(input) : input);
     }

@@ -52,7 +52,7 @@ public class ArticleController {
     @PostMapping("/saveImage")
     @ResponseBody
     public String saveImage(@RequestParam MultipartFile image, @RequestParam int number) throws IOException {
-        FileOutputStream fos = new FileOutputStream("src/main/resources/static/articles/template/" + image.getName() + "_" + number + ".jpg");
+        FileOutputStream fos = new FileOutputStream("src/main/resources/static/articles/autozhlob/template/" + image.getName() + "_" + number + ".jpg");
         fos.write(image.getBytes());
         fos.close();
         return image.getName() + "_" + number + ".jpg";

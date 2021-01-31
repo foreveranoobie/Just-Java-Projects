@@ -7,10 +7,10 @@
 <script th:src="@{/js/jquery/jquery_3.4.1.js}"></script>
 <script th:src="@{/js/news/article.js}"></script>
 <div>
-<iframe id="previewFrame" style="background-color: white;
+<iframe id="previewFrame" style="width: 65%; min-height: 80%; background-color: white;
 z-index:2; position:absolute; display: none; border:1px solid black; left: 0; right: 0; margin-left:auto; margin-right:auto;">
 </iframe>
-<form style="z-index:1;" name="article" action="/article/saveArticle" method="post" onsubmit="submitArticle()">
+<form style="width: 80%; margin:0 auto 0 auto; z-index:1;" name="article" action="/article/saveArticle" method="post" onsubmit="submitArticle()">
         Название статьи
         <textarea name="articleName"
                   style="width: 80%; resize: none; display: block; margin-left: auto; margin-right: auto; height: 33px; overflow-y: hidden;"></textarea>
@@ -27,6 +27,5 @@ z-index:2; position:absolute; display: none; border:1px solid black; left: 0; ri
         <button onclick="previewArticle(); return false;">Предпросмотр статьи</button>
 </form>
 </div>
-<img src="image_0.jpg"/>
 </body>
 </html>
