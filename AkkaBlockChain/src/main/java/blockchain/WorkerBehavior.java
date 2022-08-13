@@ -10,6 +10,7 @@ import model.Block;
 import model.HashResult;
 
 import java.io.Serializable;
+import java.util.Random;
 
 import static utils.BlockChainUtils.calculateHash;
 
@@ -41,11 +42,15 @@ public class WorkerBehavior extends AbstractBehavior<WorkerBehavior.Command> {
                         HashResult hashResult = new HashResult();
                         hashResult.foundAHash(hash, nonce);
                         getContext().getLog().debug(nonce + " : " + hash);
-                        command.getController().tell(hashResult);
+                        command.getController().tell(new ManagerBehavior.HashResultCommand(hashResult));
                         return Behaviors.same();
                     } else {
                         getContext().getLog().debug("null");
-                        return Behaviors.same();
+/*                        Random random = new Random();
+                        if (random.nextInt(10) == 3) {
+                            throw new ArithmeticException("No hash found!");
+                        }*/
+                        return Behaviors.stopped();
                     }
                 })
                 .build();
@@ -56,9 +61,9 @@ public class WorkerBehavior extends AbstractBehavior<WorkerBehavior.Command> {
         private Block block;
         private int startNonce;
         private int difficultyLevel;
-        private ActorRef<HashResult> controller;
+        private ActorRef<ManagerBehavior.Command> controller;
 
-        public Command(Block block, int startNonce, int difficultyLevel, ActorRef<HashResult> controller) {
+        public Command(Block block, int startNonce, int difficultyLevel, ActorRef<ManagerBehavior.Command> controller) {
             this.block = block;
             this.startNonce = startNonce;
             this.difficultyLevel = difficultyLevel;
@@ -77,7 +82,7 @@ public class WorkerBehavior extends AbstractBehavior<WorkerBehavior.Command> {
             return difficultyLevel;
         }
 
-        public ActorRef<HashResult> getController() {
+        public ActorRef<ManagerBehavior.Command> getController() {
             return controller;
         }
     }

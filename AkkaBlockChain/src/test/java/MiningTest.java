@@ -1,6 +1,7 @@
 import akka.actor.testkit.typed.CapturedLogEvent;
 import akka.actor.testkit.typed.javadsl.BehaviorTestKit;
 import akka.actor.testkit.typed.javadsl.TestInbox;
+import blockchain.ManagerBehavior;
 import blockchain.WorkerBehavior;
 import model.Block;
 import model.HashResult;
@@ -19,7 +20,7 @@ public class MiningTest {
         BehaviorTestKit<WorkerBehavior.Command> worker = BehaviorTestKit.create(WorkerBehavior.createBehavior());
         Block block = BlocksData.getNextBlock(0, "0");
 
-        TestInbox<HashResult> controller = TestInbox.create();
+        TestInbox<ManagerBehavior.Command> controller = TestInbox.create();
 
         WorkerBehavior.Command command = new WorkerBehavior.Command(block, 1000, 5, controller.getRef());
         worker.run(command);
@@ -34,7 +35,7 @@ public class MiningTest {
         BehaviorTestKit<WorkerBehavior.Command> testActor = BehaviorTestKit.create(WorkerBehavior.createBehavior());
         Block block = BlocksData.getNextBlock(0, "0");
 
-        TestInbox<HashResult> controller = TestInbox.create();
+        TestInbox<ManagerBehavior.Command> controller = TestInbox.create();
 
         WorkerBehavior.Command message = new WorkerBehavior.Command(block, 2784000, 5, controller.getRef());
         testActor.run(message);
@@ -50,14 +51,15 @@ public class MiningTest {
         BehaviorTestKit<WorkerBehavior.Command> testActor = BehaviorTestKit.create(WorkerBehavior.createBehavior());
         Block block = BlocksData.getNextBlock(0, "0");
 
-        TestInbox<HashResult> controller = TestInbox.create();
+        TestInbox<ManagerBehavior.Command> controller = TestInbox.create();
 
         WorkerBehavior.Command message = new WorkerBehavior.Command(block, 2784000, 5, controller.getRef());
         testActor.run(message);
 
         HashResult expectedHashResult = new HashResult();
         expectedHashResult.foundAHash("00000e557ecd72770fd680907439286648407de24e7932548b2bced8fb8ac933", 2784133);
-        controller.expectMessage(expectedHashResult);
+        ManagerBehavior.HashResultCommand resultCommand = new ManagerBehavior.HashResultCommand(expectedHashResult);
+        controller.expectMessage(resultCommand);
     }
 
     @Test
@@ -65,7 +67,7 @@ public class MiningTest {
         BehaviorTestKit<WorkerBehavior.Command> testActor = BehaviorTestKit.create(WorkerBehavior.createBehavior());
         Block block = BlocksData.getNextBlock(0, "0");
 
-        TestInbox<HashResult> controller = TestInbox.create();
+        TestInbox<ManagerBehavior.Command> controller = TestInbox.create();
 
         WorkerBehavior.Command message = new WorkerBehavior.Command(block, 0, 5, controller.getRef());
         testActor.run(message);
